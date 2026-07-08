@@ -1630,118 +1630,89 @@ if (allIndustriesGrid) {
 
 
 
-//restaurant page js start 
+//salon and spa page js start 
 
-
-  (function () {
-      // Scope everything inside .rastaurant-counter-section — no global conflicts
-      const section = document.querySelector('.rastaurant-counter-section');
-      if (!section) return;
- 
-      const cards    = section.querySelectorAll('.stat-card');
-      const counters = section.querySelectorAll('[data-target]');
-      let animated   = false;
- 
-      function animateCounter(el) {
-        const target   = parseInt(el.dataset.target);
-        const suffix   = el.dataset.suffix || '';
-        const duration = 1800;
-        const startTime = performance.now();
- 
-        function update(currentTime) {
-          const elapsed  = currentTime - startTime;
-          const progress = Math.min(elapsed / duration, 1);
-          const eased    = 1 - Math.pow(1 - progress, 3); // ease-out cubic
-          el.textContent = Math.floor(eased * target) + suffix;
- 
-          if (progress < 1) {
-            requestAnimationFrame(update);
-          } else {
-            el.textContent = target + suffix;
-          }
-        }
- 
-        requestAnimationFrame(update);
-      }
- 
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting && !animated) {
-            animated = true;
- 
-            // Staggered card reveal
-            cards.forEach(card => card.classList.add('visible'));
- 
-            // Start counters after cards begin appearing
-            setTimeout(() => {
-              counters.forEach(counter => animateCounter(counter));
-            }, 300);
-          }
-        });
-      }, { threshold: 0.2 });
- 
-      observer.observe(section);
-    })();
-
-
-
-
-    //accordion for restaurant page
-
-
-    (function () {
-      const section = document.querySelector('.restaurant-accordion');
-      if (!section) return;
- 
-      const items = section.querySelectorAll('.accordion-item');
- 
-      items.forEach(item => {
-        const trigger = item.querySelector('.accordion-trigger');
-        const body    = item.querySelector('.accordion-body');
- 
-        trigger.addEventListener('click', () => {
-          const isOpen = item.classList.contains('open');
- 
-          // Close all
-          items.forEach(i => {
-            i.classList.remove('open');
-            i.querySelector('.accordion-body').classList.remove('open');
-            i.querySelector('.accordion-trigger').setAttribute('aria-expanded', 'false');
-          });
- 
-          // Open clicked (if it was closed)
-          if (!isOpen) {
-            item.classList.add('open');
-            body.classList.add('open');
-            trigger.setAttribute('aria-expanded', 'true');
-          }
-        });
-      });
-    })();
-
-
-
-
-    //for faq section
-
-    document.querySelectorAll('.restaurant-faq-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-            const item = btn.parentElement;
-            const body = item.querySelector('.faq-body');
-            const icon = btn.querySelector('.faq-icon');
-            const isOpen = body.style.maxHeight && body.style.maxHeight !== '0px';
-
-            // close all
-            document.querySelectorAll('.faq-body').forEach(b => b.style.maxHeight = '0px');
-            document.querySelectorAll('.faq-icon').forEach(i => i.style.transform = 'rotate(0deg)');
-
-            // open clicked
-            if (!isOpen) {
-            body.style.maxHeight = body.scrollHeight + 'px';
-            icon.style.transform = 'rotate(45deg)';
-            }
-        });
+document.querySelectorAll('.saloneandspas-spacification').forEach(row => {
+  const img = row.querySelector('img');
+  const base = gsap.getProperty(img, "rotation"); // or set manually
+  row.addEventListener('mouseenter', () => gsap.to(img, { rotation: -5, duration: 0.5, ease: "power2.out" }));
+  row.addEventListener('mouseleave', () => gsap.to(img, { rotation: base, duration: 0.5, ease: "power2.out" }));
 });
 
 
-// restaurant page js end
+
+
+// ================= FAQ ACCORDION =================
+(function () {
+  const faqItems = document.querySelectorAll('#faq-accordion .faq-item');
+
+  if (!faqItems.length) return;
+
+  function openItem(item) {
+    const trigger = item.querySelector('.faq-trigger');
+    const panel = item.querySelector('.faq-panel');
+    const plusWrap = item.querySelector('.faq-icon-plus').parentElement;
+    const minusWrap = item.querySelector('.faq-icon-minus-wrap');
+
+    item.classList.add('faq-active');
+    item.style.backgroundColor = '#F0E4C8';
+    trigger.setAttribute('aria-expanded', 'true');
+
+    panel.style.maxHeight = panel.scrollHeight + 'px';
+
+    plusWrap.classList.add('hidden');
+    plusWrap.classList.remove('flex');
+    minusWrap.classList.remove('hidden');
+    minusWrap.classList.add('flex');
+  }
+
+  function closeItem(item) {
+    const trigger = item.querySelector('.faq-trigger');
+    const panel = item.querySelector('.faq-panel');
+    const plusWrap = item.querySelector('.faq-icon-plus').parentElement;
+    const minusWrap = item.querySelector('.faq-icon-minus-wrap');
+
+    item.classList.remove('faq-active');
+    item.style.backgroundColor = '';
+    trigger.setAttribute('aria-expanded', 'false');
+
+    panel.style.maxHeight = '0px';
+
+    plusWrap.classList.remove('hidden');
+    plusWrap.classList.add('flex');
+    minusWrap.classList.add('hidden');
+    minusWrap.classList.remove('flex');
+  }
+
+  function closeAll() {
+    faqItems.forEach(closeItem);
+  }
+
+  faqItems.forEach(function (item) {
+    const trigger = item.querySelector('.faq-trigger');
+
+    trigger.addEventListener('click', function () {
+      const isOpen = item.classList.contains('faq-active');
+
+      closeAll();
+
+      if (!isOpen) {
+        openItem(item);
+      }
+    });
+  });
+
+  // Recalculate open panel height on window resize (for responsive text reflow)
+  window.addEventListener('resize', function () {
+    const activeItem = document.querySelector('#faq-accordion .faq-item.faq-active');
+    if (activeItem) {
+      const panel = activeItem.querySelector('.faq-panel');
+      panel.style.maxHeight = panel.scrollHeight + 'px';
+    }
+  });
+
+  // Open first item by default
+  openItem(faqItems[0]);
+})();
+
+// salons and spas page js end

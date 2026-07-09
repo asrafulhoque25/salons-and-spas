@@ -480,6 +480,9 @@ text-transform: uppercase;
     background-color: #065136;
     cursor: pointer;
      }
+     .mobile-hambergur-bg-salon{
+        background-color: #F4EDDA !important;
+     }
     /* ─── TOP PANEL (menu content) ─── */
     .menu-top {
       flex: 1;
@@ -885,61 +888,29 @@ html.lenis, html.lenis body {
 
 
 
- /* restorant page css start  */
+ /* salon and spas page css start  */
+.custom-scroll {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #BD8600 #F0E4C8; 
+}
 
-   .stat-card {
-      opacity: 0;
-      transform: translateY(32px);
-      transition: opacity 0.6s ease, transform 0.6s ease;
-    }
-    .stat-card.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    .stat-card:nth-child(1) { transition-delay: 0.0s; }
-    .stat-card:nth-child(2) { transition-delay: 0.15s; }
-    .stat-card:nth-child(3) { transition-delay: 0.3s; }
-    .stat-card:nth-child(4) { transition-delay: 0.45s; }
+/* WebKit browsers (Chrome, Safari, Edge) */
+.custom-scroll::-webkit-scrollbar {
+  height: 8px; 
+  width: 8px; 
+}
 
+.custom-scroll::-webkit-scrollbar-track {
+  background: #F0E4C8;
+  border-radius: 10px;
+}
 
-    .bg-restourant-orange{
-        background:#FFC75C;
-    }
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: #BD8600;
+  border-radius: 10px;
+}
 
-
-
-
-       .restaurant-accordion  .accordion-body {
-      display: grid;
-      grid-template-rows: 0fr;
-      transition: grid-template-rows 0.35s ease;
-    }
-    .restaurant-accordion .accordion-body.open {
-      grid-template-rows: 1fr;
-    }
-    .restaurant-accordion .accordion-body > div {
-      overflow: hidden;
-    }
- 
-    .restaurant-accordion .accordion-icon {
-      transition: transform 0.35s ease;
-    }
-   .restaurant-accordion  .accordion-item.open .accordion-icon {
-      transform: rotate(45deg);
-    }
-
-
-
-    .restaurent-work-progress{
-        background:#F9F8F6 !important;
-    }
-
-    .restaurant-price-section{
-        background-image: url('../images/restaurant-price.webp');
-        background-size: cover;
-    }
-
-    .para-weight p {
-        font-weight: 400 !important;
-    }
- /* restorant page css end */
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+  background: #a37600;
+}
+ /* salon and spas page css end  */

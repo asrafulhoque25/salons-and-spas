@@ -18,7 +18,7 @@
                 <div class="flex items-center sm:gap-4 gap-3">
                     <!-- Desktop Sidebar Button -->
                     <button id="desktop-sidebar" aria-label="Toggle menu"
-                        class="demo-trigger hidden lg:block text-green1 hover:text-green2 xl:px-19 md:px-6 py-5 bg-[#F4EDDA] hover:bg-[#E7D4A6] cursor-pointer transition-colors"
+                        class=" hidden lg:block text-green1 hover:text-green2 xl:px-19 md:px-6 py-5 bg-[#F4EDDA] hover:bg-[#E7D4A6] cursor-pointer transition-colors"
                         aria-label="Toggle menu">
 <svg width="42" height="8" viewBox="0 0 42 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="42" height="2" fill="#36432A"/>
@@ -29,12 +29,13 @@
 
                     </button>
                     <!-- Mobile Hamburger -->
-                    <button id="mobile-menu-toggle" class="lg:hidden text-white hover:text-green1 p-2 transition-colors bg-[#F4EDDA]"
+                    <button id="mobile-menu-toggle" class="mobile-hambergur-bg-salon lg:hidden text-white hover:text-green1 p-2 transition-colors bg-[#F4EDDA]"
                         aria-label="Toggle mobile menu">
-                       <svg width="42" height="8" viewBox="0 0 42 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+   <svg width="42" height="8" viewBox="0 0 42 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="42" height="2" fill="#36432A"/>
 <rect y="6" width="42" height="2" fill="#36432A"/>
 </svg>
+
 
                     </button>
                     <a href="index.html" class="flex items-center">
@@ -443,49 +444,49 @@
 
     <!-- HERO SECTION -->
 <!-- ================= BANNER ================= -->
-  <section class=" bg-[linear-gradient(180deg,_#F4EDDA_0%,_#FBF9F4_100%)]  pt-24">
+  <section class=" bg-[linear-gradient(180deg,_#F4EDDA_0%,_#FBF9F4_100%)]  lg:pt-24 pt-20 ">
    <div class="lg:px-17 md:px-7 sm:px-4 px-4">
-     <div class="grid grid-cols-1 items-stretch gap-12 lg:grid-cols-[1.05fr_1.15fr_1fr] lg:gap-8 ">
+     <div class="grid grid-cols-1 items-stretch gap-12 sm:grid-cols-2 xl:grid-cols-[1.05fr_1.15fr_1fr] lg:gap-8 ">
  
       <!-- ---------- LEFT COLUMN ---------- -->
-      <div class="flex flex-col justify-between py-16">
+      <div class="flex flex-col justify-between lg:py-16">
  
         <!-- title + button -->
         <div>
           <h1 class="leading-none text-[#36432A]">
-            <span class="block font-imperial-script italic text-[#BD8600] text-[58px] sm:text-[84px] lg:text-[96px] xl:text-[128px] font-imperial-script">Salon and spa</span>
-            <span class="block font-imbue text-[#36432A] font-extralight text-[58px] sm:text-[84px] lg:text-[96px] xl:text-[128px]">website design</span>
+            <span class="block font-imperial-script italic text-[#BD8600] xl:leading-[96px] md:leading-[72px] sm:leading-[64px] leading-[48px] text-[48px] sm:text-[64px] md:text-[72px] lg:text-[84px] xl:text-[96px] 2xl:text-[128px] font-imperial-script">Salon and spa</span>
+            <span class="block font-imbue text-[#36432A] font-extralight text-[48px] sm:text-[64px] md:text-[72px] lg:text-[84px] xl:text-[96px] 2xl:text-[128px]">website design</span>
           </h1>
  
           <button type="button"
-            class="mt-8 inline-flex items-center justify-center gap-[10px] bg-[#BD8600] px-8 py-5 font-['Archivo'] [font-stretch:semi-expanded] text-[16px] font-[700] uppercase leading-[1.3] tracking-wide text-white transition-colors hover:bg-[#a87700]">
+            class="mt-8 inline-flex items-center justify-center gap-[10px] bg-[#BD8600] sm:px-6 px-4 md:px-8 md:py-5 sm:py-4 py-3 text-[16px] font-[700] uppercase leading-[1.3] tracking-wide text-white transition-colors hover:bg-[#a87700]">
             Book a free 15-min call
           </button>
         </div>
  
         <!-- pricing + list -->
-        <div class="mt-14 lg:mt-0">
-          <p class="text-sm uppercase font-bold text-[#BD8600]">
+        <div class="sm:mt-10 mt-8 md:mt-14 lg:mt-0">
+          <p class="text-sm uppercase font-bold text-[#BD8600] mt-4">
             Everything included
           </p>
-          <p class="mt-2 font-imbue font-extralight leading-none text-[#36432A] text-[46px] sm:text-[56px] lg:text-[64px]">
+          <p class="mt-2 font-imbue font-extralight leading-none text-[#36432A] text-[36px] sm:text-[44px] lg:text-[52px] xl:text-[56px] 2xl:text-[64px]">
             999 USD/one-time
           </p>
  
-          <ul class="mt-7 space-y-3">
-            <li class="flex items-start gap-3">
+          <ul class="mt-7 sm:space-y-3 space-y-2">
+            <li class="flex items-start sm:gap-3 gap-2">
               <img src="assets/images/banner-check-salons.svg" class="" alt="banner-check">
               <span class="text-base font-[400] text-[#6B7066]">Trusted by salons and spas across the US</span>
             </li>
-            <li class="flex items-start gap-3">
+            <li class="flex items-start sm:gap-3 gap-2">
              <img src="assets/images/banner-check-salons.svg" class="" alt="banner-check">
               <span class="text-base font-[400] text-[#6B7066]">14-day delivery</span>
             </li>
-            <li class="flex items-start gap-3">
+            <li class="flex items-start sm:gap-3 gap-2">
               <img src="assets/images/banner-check-salons.svg" class="" alt="banner-check">
               <span class="text-base font-[400] text-[#6B7066]">You own the site, content, and domain</span>
             </li>
-            <li class="flex items-start gap-3">
+            <li class="flex items-start sm:gap-3 gap-2">
               <img src="assets/images/banner-check-salons.svg" class="" alt="banner-check">
               <span class="text-base font-[400] text-[#6B7066]">No retainers</span>
             </li>
@@ -502,28 +503,28 @@
       </div>
  
       <!-- ---------- RIGHT COLUMN ---------- -->
-      <div class="flex flex-col justify-between pl-20 py-16">
+      <div class="flex flex-col justify-between 2xl:pl-20 lg:py-16">
  
         <!-- heading + paragraph -->
         <div>
-          <h2 class="font-imbue font-light leading-none text-[#36432A] text-[32px] sm:text-[40px] lg:text-[48px]">
+          <h2 class="font-imbue font-light leading-none text-[#36432A] text-[28px] sm:text-[34px] lg:text-[40px] 2xl:text-[48px]">
             That turns 'near me' searches into booked appointments
           </h2>
-          <p class="mt-6 max-w-[420px] font-semibold text-base font-normal leading-[1.3] text-[#6B7066]">
+          <p class="sm:mt-6 mt-4 lg:max-w-[420px] font-semibold text-base font-normal leading-[1.3] text-[#6B7066]">
             Logo, branding, custom salon or spa website, SEO content built around real treatment and service keywords, on-page SEO, and Google Business Profile setup. Every page engineered for the moment a prospect decides whether to tap 'book now' or scroll to the next salon.
           </p>
         </div>
  
         <!-- icon boxes -->
-        <div class="mt-12 grid grid-cols-3 gap-4 lg:mt-0 lg:max-w-[360px] lg:justify-self-end">
-          <div class="flex aspect-square items-center justify-center bg-[#F1E8D1]">
-          <img src="assets/images/book-appointment-salon-1.svg" class="img-fluid" alt="book-appointment-salon">
+        <div class="lg:mt-12 sm:mt-8 mt-6 lg:pb-0 pb-12 flex items-start md:gap-4 sm:gap-2 gap-1 lg:mt-0   lg:justify-self-end">
+          <div class="flex aspect-square items-center justify-center bg-[#F1E8D1] sm:w-auto w-[40px] xl:p-4 lg:p-2 p-1.5">
+          <img src="assets/images/book-appointment-salon-1.svg" class="img-fluid " alt="book-appointment-salon">
           </div>
-          <div class="flex aspect-square items-center justify-center bg-[#F1E8D1]">
-           <img src="assets/images/book-appointment-salon-2.svg" class="img-fluid" alt="book-appointment-salon">
+          <div class="flex aspect-square items-center justify-center bg-[#F1E8D1] sm:w-auto w-[40px] xl:p-4 lg:p-2 p-1.5">
+           <img src="assets/images/book-appointment-salon-2.svg" class="img-fluid " alt="book-appointment-salon">
           </div>
-          <div class="flex aspect-square items-center justify-center bg-[#F1E8D1]">
-            <img src="assets/images/book-appointment-salon-3.svg" class="img-fluid" alt="book-appointment-salon">
+          <div class="flex aspect-square items-center justify-center bg-[#F1E8D1] sm:w-auto w-[40px] xl:p-4 lg:p-2 p-1.5">
+            <img src="assets/images/book-appointment-salon-3.svg" class="img-fluid " alt="book-appointment-salon">
           </div>
         </div>
       </div>
@@ -531,26 +532,26 @@
     </div>
    </div>
 
-   <div class="bg-[#36432A] lg:px-17 md:px-7 sm:px-5 px-4 lg:py-8 md:py-6 py-4 flex items-center justify-between">
+   <div class="bg-[#36432A] lg:px-17 md:px-7 sm:px-5 px-4 lg:py-8 md:py-6 py-4 flex flex-wrap items-center justify-center gap-x-2 sm:gap-x-4 md:gap-x-6 gap-y-2 sm:gap-y-3 md:justify-between">
       <div class="flex items-center gap-2">
         <img src="assets/images/salons-banner-star.svg" class="md:w-7 lg:w-auto" alt="star">
-        <p class="font-imbue text-xl md:text-2xl lg:text-[32px] text-white">Hair Salons</p>
+        <p class="font-imbue text-xl lg:text-2xl 2xl:text-[32px] text-white">Hair Salons</p>
       </div>
       <div class="flex items-center gap-2">
         <img src="assets/images/salons-banner-star.svg" class="md:w-7 lg:w-auto" alt="star">
-        <p class="font-imbue text-xl md:text-2xl lg:text-[32px] text-white">Nail Studios</p>
+        <p class="font-imbue text-xl lg:text-2xl 2xl:text-[32px] text-white">Nail Studios</p>
       </div>
       <div class="flex items-center gap-2">
         <img src="assets/images/salons-banner-star.svg" class="md:w-7 lg:w-auto" alt="star">
-        <p class="font-imbue text-xl md:text-2xl lg:text-[32px] text-white">Med Spas</p>
+        <p class="font-imbue text-xl lg:text-2xl 2xl:text-[32px] text-white">Med Spas</p>
       </div>
       <div class="flex items-center gap-2">
         <img src="assets/images/salons-banner-star.svg" class="md:w-7 lg:w-auto" alt="star">
-        <p class="font-imbue text-xl md:text-2xl lg:text-[32px] text-white">Day Spas</p>
+        <p class="font-imbue text-xl lg:text-2xl 2xl:text-[32px] text-white">Day Spas</p>
       </div>
       <div class="flex items-center gap-2">
         <img src="assets/images/salons-banner-star.svg" class="md:w-7 lg:w-auto" alt="star">
-        <p class="font-imbue text-xl md:text-2xl lg:text-[32px] text-white">Barbershops</p>
+        <p class="font-imbue text-xl lg:text-2xl 2xl:text-[32px] text-white">Barbershops</p>
       </div>
    </div>
 
@@ -563,22 +564,22 @@
  
  <div class="container">
    <!-- Heading -->
-  <div class="text-center mb-16 max-w-[992px] w-full mx-auto">
-    <h2 class="font-imperial-script text-[#BD8600]  text-4xl md:text-6xl lg:text-[80px] font-normal leading-none">
+  <div class="text-center md:mb-10 mb-8 lg:mb-16 max-w-[992px] w-full mx-auto">
+    <h2 class="font-imperial-script text-[#BD8600]  text-4xl md:text-5xl lg:text-6xl 2xl:text-[80px] font-normal leading-none">
       The real problems
     </h2>
-    <h1 class="font-imbue text-[#36432A] font-extralight leading-none text-4xl md:text-5xl lg:text-6xl xl:text-[80px] mt-4">
+    <h1 class="font-imbue text-[#36432A] font-extralight leading-none text-[32px] md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-[80px] sm:mt-4 mt-3">
       8 reasons most salon and spa websites quietly hand bookings to Vagaro
     </h1>
   </div>
  
   <!-- Cards Grid -->
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8 md:gap-6 gap-4">
  
     <!-- Card 1 -->
-    <div class="flex flex-col items-center text-center p-8 gap-5 border border-[#CCCDC4]">
-    <img src="assets/images/salons-features-1.svg" class="salons-feature" alt="salons feature">
-      <h3 class="text-[#36432A] font-imbue font-extralight text-2xl md:text-3xl xl:text-[40px] leading-none" >
+    <div class="flex flex-col items-center text-center md:p-8 p-6 gap-5 border border-[#CCCDC4]">
+    <img src="assets/images/salons-features-1.svg" class="salons-feature lg:w-auto md:w-16 w-12" alt="salons feature">
+      <h3 class="text-[#36432A] font-imbue font-extralight text-3xl lg:text-4xl 2xl:text-[40px] leading-none" >
         Service menu buried three taps deep
       </h3>
       <p class="text-[#6B7066] text-base leading-[130%]">
@@ -587,9 +588,9 @@
     </div>
  
     <!-- Card 2 -->
-    <div class="flex flex-col items-center text-center p-8 gap-5 border border-[#CCCDC4]">
-      <img src="assets/images/salons-features-2.svg" class="salons-feature" alt="salons feature">
-      <h3 class="text-[#36432A] font-imbue font-extralight text-2xl md:text-3xl xl:text-[40px] leading-none" >
+    <div class="flex flex-col items-center text-center md:p-8 p-6 gap-5 border border-[#CCCDC4]">
+      <img src="assets/images/salons-features-2.svg" class="salons-feature lg:w-auto md:w-16 w-12" alt="salons feature">
+      <h3 class="text-[#36432A] font-imbue font-extralight text-3xl lg:text-4xl 2xl:text-[40px] leading-none" >
         Booking widget is a third-party iframe
       </h3>
       <p class="text-[#6B7066] text-base leading-[130%]">
@@ -598,9 +599,9 @@
     </div>
  
     <!-- Card 3 -->
-    <div class="flex flex-col items-center text-center p-8 gap-5 border border-[#CCCDC4]">
-      <img src="assets/images/salons-features-3.svg" class="salons-feature" alt="salons feature">
-      <h3 class="text-[#36432A] font-imbue font-extralight text-2xl md:text-3xl xl:text-[40px] leading-none" >
+    <div class="flex flex-col items-center text-center md:p-8 p-6 gap-5 border border-[#CCCDC4]">
+      <img src="assets/images/salons-features-3.svg" class="salons-feature lg:w-auto md:w-16 w-12" alt="salons feature">
+      <h3 class="text-[#36432A] font-imbue font-extralight text-3xl lg:text-4xl 2xl:text-[40px] leading-none" >
         No transparent pricing — and prospects bounce to find it
       </h3>
       <p class="text-[#6B7066] text-base leading-[130%]">
@@ -609,9 +610,9 @@
     </div>
  
     <!-- Card 4 -->
-    <div class="flex flex-col items-center text-center p-8 gap-5 border border-[#CCCDC4]">
-       <img src="assets/images/salons-features-4.svg" class="salons-feature" alt="salons feature">
-      <h3 class="text-[#36432A] font-imbue font-extralight text-2xl md:text-3xl xl:text-[40px] leading-none" >
+    <div class="flex flex-col items-center text-center md:p-8 p-6 gap-5 border border-[#CCCDC4]">
+       <img src="assets/images/salons-features-4.svg" class="salons-feature lg:w-auto md:w-16 w-12" alt="salons feature">
+      <h3 class="text-[#36432A] font-imbue font-extralight text-3xl lg:text-4xl 2xl:text-[40px] leading-none" >
         Stylist portfolios live on Instagram, not your site
       </h3>
       <p class="text-[#6B7066] text-base leading-[130%]">
@@ -620,9 +621,9 @@
     </div>
  
     <!-- Card 5 -->
-    <div class="flex flex-col items-center text-center p-8 gap-5 border border-[#CCCDC4]">
-     <img src="assets/images/salons-features-5.svg" class="salons-feature" alt="salons feature">
-      <h3 class="text-[#36432A] font-imbue font-extralight text-2xl md:text-3xl xl:text-[40px] leading-none" >
+    <div class="flex flex-col items-center text-center md:p-8 p-6 gap-5 border border-[#CCCDC4]">
+     <img src="assets/images/salons-features-5.svg" class="salons-feature lg:w-auto md:w-16 w-12" alt="salons feature">
+      <h3 class="text-[#36432A] font-imbue font-extralight text-3xl lg:text-4xl 2xl:text-[40px] leading-none" >
         One 'Services' page where you need eight
       </h3>
       <p class="text-[#6B7066] text-base leading-[130%]">
@@ -631,9 +632,9 @@
     </div>
  
     <!-- Card 6 -->
-    <div class="flex flex-col items-center text-center p-8 gap-5 border border-[#CCCDC4]">
-      <img src="assets/images/salons-features-6.svg" class="salons-feature" alt="salons feature">
-      <h3 class="text-[#36432A] font-imbue font-extralight text-2xl md:text-3xl xl:text-[40px] leading-none" >
+    <div class="flex flex-col items-center text-center md:p-8 p-6 gap-5 border border-[#CCCDC4]">
+      <img src="assets/images/salons-features-6.svg" class="salons-feature lg:w-auto md:w-16 w-12" alt="salons feature">
+      <h3 class="text-[#36432A] font-imbue font-extralight text-3xl lg:text-4xl 2xl:text-[40px] leading-none" >
         Photo galleries take 8 seconds to load on mobile
       </h3>
       <p class="text-[#6B7066] text-base leading-[130%]">
@@ -642,9 +643,9 @@
     </div>
  
     <!-- Card 7 -->
-    <div class="flex flex-col items-center text-center p-8 gap-5 border border-[#CCCDC4]">
-      <img src="assets/images/salons-features-7.svg" class="salons-feature" alt="salons feature">
-      <h3 class="text-[#36432A] font-imbue font-extralight text-2xl md:text-3xl xl:text-[40px] leading-none" >
+    <div class="flex flex-col items-center text-center md:p-8 p-6 gap-5 border border-[#CCCDC4]">
+      <img src="assets/images/salons-features-7.svg" class="salons-feature lg:w-auto md:w-16 w-12" alt="salons feature">
+      <h3 class="text-[#36432A] font-imbue font-extralight text-3xl lg:text-4xl 2xl:text-[40px] leading-none" >
         No reviews showing on the site itself
       </h3>
       <p class="text-[#6B7066] text-base leading-[130%]">
@@ -653,9 +654,9 @@
     </div>
  
     <!-- Card 8 -->
-    <div class="flex flex-col items-center text-center p-8 gap-5 border border-[#CCCDC4]">
-       <img src="assets/images/salons-features-8.svg" class="salons-feature" alt="salons feature">
-      <h3 class="text-[#36432A] font-imbue font-extralight text-2xl md:text-3xl xl:text-[40px] leading-none" >
+    <div class="flex flex-col items-center text-center md:p-8 p-6 gap-5 border border-[#CCCDC4]">
+       <img src="assets/images/salons-features-8.svg" class="salons-feature lg:w-auto md:w-16 w-12" alt="salons feature">
+      <h3 class="text-[#36432A] font-imbue font-extralight text-3xl lg:text-4xl 2xl:text-[40px] leading-none" >
         No gift card purchase flow
       </h3>
       <p class="text-[#6B7066] text-base leading-[130%]">
@@ -675,14 +676,14 @@
   <div class="container">
 
     <!-- Heading -->
-    <div class="text-center max-w-[992px] w-full mx-auto mb-12 md:mb-16">
-      <h2 class="font-imperial-script text-[#BD8600] text-4xl md:text-6xl lg:text-[80px] font-normal leading-none">
+    <div class="text-center max-w-[992px] w-full mx-auto mb-8 sm:mb-12 md:mb-16">
+      <h2 class="font-imperial-script text-[#BD8600] text-4xl md:text-5xl lg:text-6xl 2xl:text-[80px] font-normal leading-none">
         Everything included
       </h2>
-      <h2 class="font-imbue text-white font-extralight leading-none text-4xl md:text-5xl lg:text-6xl xl:text-[80px] mt-4">
+      <h2 class="font-imbue text-white font-extralight leading-none text-[32px] md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-[80px] mt-4">
         What you'd pay separately vs what you pay us
       </h2>
-      <p class="mt-6 text-base leading-[130%] text-[#BEC5B7] max-w-[664px] w-full mx-auto">
+      <p class="mt-4 sm:mt-6 text-base leading-[130%] text-[#BEC5B7] max-w-[664px] w-full mx-auto">
         Six separate services from six providers, or one package, one team, one fixed price. Every deliverable built specifically for how beauty clients research and book.
       </p>
     </div>
@@ -691,72 +692,72 @@
     <div class="max-w-[1120px] mx-auto">
 
       <!-- Row 1 -->
-      <div class="flex items-start gap-4 md:gap-8 border-t border-[#56614C] py-7 md:py-8 md:px-6 px-4">
+      <div class="flex items-start gap-4 md:gap-8 border-t border-[#56614C] py-4 md:py-8 md:px-6 sm:px-4 px-3">
         <img src="assets/images/logo-brand-salons-spas.svg" class="w-12 md:w-auto shrink-0" alt="pricing-icon">
         <div class="flex-1">
           <div class="flex items-start justify-between gap-4">
-            <h3 class="font-imbue font-extralight text-white leading-none text-2xl md:text-3xl xl:text-[40px]">Logo + brand identity</h3>
-            <span class="font-imbue font-extralight text-white leading-none text-2xl md:text-3xl xl:text-[40px] text-right line-through whitespace-nowrap">$400+</span>
+            <h3 class="font-imbue font-extralight text-white leading-none text-[28px] sm:text-3xl md:text-4xl 2xl:text-[40px]">Logo + brand identity</h3>
+            <span class="font-imbue font-extralight text-white leading-none text-[28px] sm:text-3xl md:text-4xl 2xl:text-[40px] text-right line-through whitespace-nowrap">$400+</span>
           </div>
           <p class="mt-3 max-w-[560px] text-base leading-[130%] text-[#BEC5B7]">Logo, color palette, typography, brand kit. Aesthetic-aware design that signals salon polish, not lawyer office.</p>
         </div>
       </div>
 
       <!-- Row 2 -->
-      <div class="flex items-start gap-4 md:gap-8 border-t border-[#56614C] py-7 md:py-8 md:px-6 px-4">
+      <div class="flex items-start gap-4 md:gap-8 border-t border-[#56614C] py-4 md:py-8 md:px-6 sm:px-4 px-3">
         <img src="assets/images/website-salons-spas.svg" class="w-12 md:w-auto shrink-0" alt="pricing-icon">
         <div class="flex-1">
           <div class="flex items-start justify-between gap-4">
-            <h3 class="font-imbue font-extralight text-white leading-none text-2xl md:text-3xl xl:text-[40px]">Custom 6-page salon website</h3>
-            <span class="font-imbue font-extralight text-white leading-none text-2xl md:text-3xl xl:text-[40px] text-right line-through whitespace-nowrap">$1,500+</span>
+            <h3 class="font-imbue font-extralight text-white leading-none text-[28px] sm:text-3xl md:text-4xl 2xl:text-[40px]">Custom 6-page salon website</h3>
+            <span class="font-imbue font-extralight text-white leading-none text-[28px] sm:text-3xl md:text-4xl 2xl:text-[40px] text-right line-through whitespace-nowrap">$1,500+</span>
           </div>
           <p class="mt-3 max-w-[560px] text-base leading-[130%] text-[#BEC5B7]">Home, About, Services menu, Stylist portfolios, Gallery, Book. Mobile-first, sub-2-second load.</p>
         </div>
       </div>
 
       <!-- Row 3 -->
-      <div class="flex items-start gap-4 md:gap-8 border-t border-[#56614C] py-7 md:py-8 md:px-6 px-4">
+      <div class="flex items-start gap-4 md:gap-8 border-t border-[#56614C] py-4 md:py-8 md:px-6 sm:px-4 px-3">
         <img src="assets/images/seo-content-salons-spas.svg" class="w-12 md:w-auto shrink-0" alt="pricing-icon">
         <div class="flex-1">
           <div class="flex items-start justify-between gap-4">
-            <h3 class="font-imbue font-extralight text-white leading-none text-2xl md:text-3xl xl:text-[40px]">SEO content with real keyword research</h3>
-            <span class="font-imbue font-extralight text-white leading-none text-2xl md:text-3xl xl:text-[40px] text-right line-through whitespace-nowrap">$800+</span>
+            <h3 class="font-imbue font-extralight text-white leading-none text-[28px] sm:text-3xl md:text-4xl 2xl:text-[40px]">SEO content with real keyword research</h3>
+            <span class="font-imbue font-extralight text-white leading-none text-[28px] sm:text-3xl md:text-4xl 2xl:text-[40px] text-right line-through whitespace-nowrap">$800+</span>
           </div>
           <p class="mt-3 max-w-[560px] text-base leading-[130%] text-[#BEC5B7]">Page copy written around real local salon searches &mdash; 'balayage [city],' 'lash extensions near me,' service-specific intent.</p>
         </div>
       </div>
 
       <!-- Row 4 -->
-      <div class="flex items-start gap-4 md:gap-8 border-t border-[#56614C] py-7 md:py-8 md:px-6 px-4">
+      <div class="flex items-start gap-4 md:gap-8 border-t border-[#56614C] py-4 md:py-8 md:px-6 sm:px-4 px-3">
         <img src="assets/images/technicalsalons-spas.svg" class="w-12 md:w-auto shrink-0" alt="pricing-icon">
         <div class="flex-1">
           <div class="flex items-start justify-between gap-4">
-            <h3 class="font-imbue font-extralight text-white leading-none text-2xl md:text-3xl xl:text-[40px]">Technical on-page SEO setup</h3>
-            <span class="font-imbue font-extralight text-white leading-none text-2xl md:text-3xl xl:text-[40px] text-right line-through whitespace-nowrap">$500+</span>
+            <h3 class="font-imbue font-extralight text-white leading-none text-[28px] sm:text-3xl md:text-4xl 2xl:text-[40px]">Technical on-page SEO setup</h3>
+            <span class="font-imbue font-extralight text-white leading-none text-[28px] sm:text-3xl md:text-4xl 2xl:text-[40px] text-right line-through whitespace-nowrap">$500+</span>
           </div>
           <p class="mt-3 max-w-[560px] text-base leading-[130%] text-[#BEC5B7]">BeautySalon schema, meta titles per service, internal linking, sitemap, Search Console, image optimization.</p>
         </div>
       </div>
 
       <!-- Row 5 -->
-      <div class="flex items-start gap-4 md:gap-8 border-t border-[#56614C] py-7 md:py-8 md:px-6 px-4">
+      <div class="flex items-start gap-4 md:gap-8 border-t border-[#56614C] py-4 md:py-8 md:px-6 sm:px-4 px-3">
         <img src="assets/images/google-business-salons-spas.svg" class="w-12 md:w-auto shrink-0" alt="pricing-icon">
         <div class="flex-1">
           <div class="flex items-start justify-between gap-4">
-            <h3 class="font-imbue font-extralight text-white leading-none text-2xl md:text-3xl xl:text-[40px]">Google Business Profile optimization</h3>
-            <span class="font-imbue font-extralight text-white leading-none text-2xl md:text-3xl xl:text-[40px] text-right line-through whitespace-nowrap">$400+</span>
+            <h3 class="font-imbue font-extralight text-white leading-none text-[28px] sm:text-3xl md:text-4xl 2xl:text-[40px]">Google Business Profile optimization</h3>
+            <span class="font-imbue font-extralight text-white leading-none text-[28px] sm:text-3xl md:text-4xl 2xl:text-[40px] text-right line-through whitespace-nowrap">$400+</span>
           </div>
           <p class="mt-3 max-w-[560px] text-base leading-[130%] text-[#BEC5B7]">Categories, services, photos, hours, NAP cleanup, posts setup. Often the highest-intent traffic source for salons.</p>
         </div>
       </div>
 
       <!-- Row 6 -->
-      <div class="flex items-start gap-4 md:gap-8 border-t border-[#56614C] py-7 md:py-8 md:px-6 px-4">
+      <div class="flex items-start gap-4 md:gap-8 border-t border-[#56614C] py-4 md:py-8 md:px-6 sm:px-4 px-3">
         <img src="assets/images/30days-support-salons-spas.svg" class="w-12 md:w-auto shrink-0" alt="pricing-icon">
         <div class="flex-1">
           <div class="flex items-start justify-between gap-4">
-            <h3 class="font-imbue font-extralight text-white leading-none text-2xl md:text-3xl xl:text-[40px]">30 days post-launch support</h3>
-            <span class="font-imbue font-extralight text-white leading-none text-2xl md:text-3xl xl:text-[40px] text-right line-through whitespace-nowrap">$300+</span>
+            <h3 class="font-imbue font-extralight text-white leading-none text-[28px] sm:text-3xl md:text-4xl 2xl:text-[40px]">30 days post-launch support</h3>
+            <span class="font-imbue font-extralight text-white leading-none text-[28px] sm:text-3xl md:text-4xl 2xl:text-[40px] text-right line-through whitespace-nowrap">$300+</span>
           </div>
           <p class="mt-3 max-w-[560px] text-base leading-[130%] text-[#BEC5B7]">Bug fixes, content updates, CMS training, A/B test of booking CTA placement.</p>
         </div>
@@ -766,8 +767,8 @@
       <div class="bg-[#27351B] flex items-center gap-4 md:gap-8 py-6 md:py-7 mt-3 px-4 md:px-6">
         <img src="assets/images/total-salons-spas.svg" class="w-12 md:w-auto shrink-0" alt="total-icon">
         <div class="flex-1 flex items-center justify-between gap-4">
-          <h3 class="font-imbue font-extralight text-white leading-none text-2xl md:text-3xl xl:text-[40px]">Total elsewhere</h3>
-          <span class="font-imbue font-extralight text-white leading-none text-2xl md:text-3xl xl:text-[40px] text-right line-through whitespace-nowrap">$3,900+</span>
+          <h3 class="font-imbue font-extralight text-white leading-none text-[28px] sm:text-3xl md:text-4xl 2xl:text-[40px]">Total elsewhere</h3>
+          <span class="font-imbue font-extralight text-white leading-none text-[28px] sm:text-3xl md:text-4xl 2xl:text-[40px] text-right line-through whitespace-nowrap">$3,900+</span>
         </div>
       </div>
 
@@ -775,8 +776,8 @@
       <div class="bg-[#BD8600] flex items-center gap-4 md:gap-8 py-6 md:py-7 px-4 md:px-6">
         <img src="assets/images/pixxen-logo-salons-spas.svg" class="w-12 md:w-auto shrink-0" alt="pixxen-logo">
         <div class="flex-1 flex items-center justify-between gap-4">
-          <h3 class="font-imbue font-extralight text-white leading-none text-2xl md:text-3xl xl:text-[40px]">Pixxen Salon & Spa Pack</h3>
-          <span class="font-imbue font-extralight text-white leading-none text-2xl md:text-3xl xl:text-[40px] text-right whitespace-nowrap">$999</span>
+          <h3 class="font-imbue font-extralight text-white leading-none text-[28px] sm:text-3xl md:text-4xl 2xl:text-[40px]">Pixxen Salon & Spa Pack</h3>
+          <span class="font-imbue font-extralight text-white leading-none text-[28px] sm:text-3xl md:text-4xl 2xl:text-[40px] text-right whitespace-nowrap">$999</span>
         </div>
       </div>
 
@@ -791,25 +792,25 @@
 
   <div class="container">
     <!-- Heading -->
-    <div class="text-center mb-16 max-w-[992px] w-full mx-auto">
-      <h2 class="font-imperial-script text-[#BD8600] text-4xl md:text-6xl lg:text-[80px] font-normal leading-none">
+    <div class="text-center md:mb-10 mb-8 lg:mb-16 max-w-[992px] w-full mx-auto">
+      <h2 class="font-imperial-script text-[#BD8600] text-4xl md:text-5xl lg:text-6xl 2xl:text-[80px] font-normal leading-none">
         Built for salons and spas
       </h2>
-      <h1 class="font-imbue text-[#36432A] font-extralight leading-none text-4xl md:text-5xl lg:text-6xl xl:text-[80px] mt-4">
+      <h1 class="font-imbue text-[#36432A] font-extralight leading-none text-[32px] md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-[80px] sm:mt-4 mt-3">
         8 features salon owners actually use (and most websites skip)
       </h1>
-      <p class="text-[#6B7066] text-base leading-[130%] mt-6 max-w-[620px] mx-auto">
+      <p class="text-[#6B7066] text-base leading-[130%] md:mt-6 mt-4 max-w-[620px] mx-auto">
         Every feature on this list exists because we've seen it move the needle on booked appointments. Nothing here is decoration.
       </p>
     </div>
 
     <!-- Cards Grid -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8 md:gap-6 gap-4">
 
       <!-- Card 1 -->
-      <div class="flex flex-col items-center text-center p-8 gap-5 border border-[#CCCDC4]">
-        <img src="assets/images/salons-benefits-1.svg" class="salons-feature" alt="salons feature">
-        <h3 class="text-[#36432A] font-imbue font-extralight text-2xl md:text-3xl xl:text-[40px] leading-none">
+      <div class="flex flex-col items-center text-center md:p-8 p-6 gap-5 border border-[#CCCDC4]">
+        <img src="assets/images/salons-benefits-1.svg" class="salons-feature lg:w-auto md:w-16 w-12" alt="salons feature">
+        <h3 class="text-[#36432A] font-imbue font-extralight text-3xl lg:text-4xl 2xl:text-[40px] leading-none">
           Native booking integration, not a third-party iframe
         </h3>
         <p class="text-[#6B7066] text-base leading-[130%]">
@@ -818,9 +819,9 @@
       </div>
 
       <!-- Card 2 -->
-      <div class="flex flex-col items-center text-center p-8 gap-5 border border-[#CCCDC4]">
-        <img src="assets/images/salons-benefits-2.svg" class="salons-feature" alt="salons feature">
-        <h3 class="text-[#36432A] font-imbue font-extralight text-2xl md:text-3xl xl:text-[40px] leading-none">
+      <div class="flex flex-col items-center text-center md:p-8 p-6 gap-5 border border-[#CCCDC4]">
+        <img src="assets/images/salons-benefits-2.svg" class="salons-feature lg:w-auto md:w-16 w-12" alt="salons feature">
+        <h3 class="text-[#36432A] font-imbue font-extralight text-3xl lg:text-4xl 2xl:text-[40px] leading-none">
           Transparent service menu with starting prices
         </h3>
         <p class="text-[#6B7066] text-base leading-[130%]">
@@ -829,9 +830,9 @@
       </div>
 
       <!-- Card 3 -->
-      <div class="flex flex-col items-center text-center p-8 gap-5 border border-[#CCCDC4]">
-        <img src="assets/images/salons-benefits-3.svg" class="salons-feature" alt="salons feature">
-        <h3 class="text-[#36432A] font-imbue font-extralight text-2xl md:text-3xl xl:text-[40px] leading-none">
+      <div class="flex flex-col items-center text-center md:p-8 p-6 gap-5 border border-[#CCCDC4]">
+        <img src="assets/images/salons-benefits-3.svg" class="salons-feature lg:w-auto md:w-16 w-12" alt="salons feature">
+        <h3 class="text-[#36432A] font-imbue font-extralight text-3xl lg:text-4xl 2xl:text-[40px] leading-none">
           Stylist profile pages with personality and portfolio
         </h3>
         <p class="text-[#6B7066] text-base leading-[130%]">
@@ -840,9 +841,9 @@
       </div>
 
       <!-- Card 4 -->
-      <div class="flex flex-col items-center text-center p-8 gap-5 border border-[#CCCDC4]">
-        <img src="assets/images/salons-benefits-4.svg" class="salons-feature" alt="salons feature">
-        <h3 class="text-[#36432A] font-imbue font-extralight text-2xl md:text-3xl xl:text-[40px] leading-none">
+      <div class="flex flex-col items-center text-center md:p-8 p-6 gap-5 border border-[#CCCDC4]">
+        <img src="assets/images/salons-benefits-4.svg" class="salons-feature lg:w-auto md:w-16 w-12" alt="salons feature">
+        <h3 class="text-[#36432A] font-imbue font-extralight text-3xl lg:text-4xl 2xl:text-[40px] leading-none">
           Before-and-after gallery with category filters
         </h3>
         <p class="text-[#6B7066] text-base leading-[130%]">
@@ -851,9 +852,9 @@
       </div>
 
       <!-- Card 5 -->
-      <div class="flex flex-col items-center text-center p-8 gap-5 border border-[#CCCDC4]">
-        <img src="assets/images/salons-benefits-5.svg" class="salons-feature" alt="salons feature">
-        <h3 class="text-[#36432A] font-imbue font-extralight text-2xl md:text-3xl xl:text-[40px] leading-none">
+      <div class="flex flex-col items-center text-center md:p-8 p-6 gap-5 border border-[#CCCDC4]">
+        <img src="assets/images/salons-benefits-5.svg" class="salons-feature lg:w-auto md:w-16 w-12" alt="salons feature">
+        <h3 class="text-[#36432A] font-imbue font-extralight text-3xl lg:text-4xl 2xl:text-[40px] leading-none">
           Gift card flow in the header year-round
         </h3>
         <p class="text-[#6B7066] text-base leading-[130%]">
@@ -862,9 +863,9 @@
       </div>
 
       <!-- Card 6 -->
-      <div class="flex flex-col items-center text-center p-8 gap-5 border border-[#CCCDC4]">
-        <img src="assets/images/salons-benefits-6.svg" class="salons-feature" alt="salons feature">
-        <h3 class="text-[#36432A] font-imbue font-extralight text-2xl md:text-3xl xl:text-[40px] leading-none">
+      <div class="flex flex-col items-center text-center md:p-8 p-6 gap-5 border border-[#CCCDC4]">
+        <img src="assets/images/salons-benefits-6.svg" class="salons-feature lg:w-auto md:w-16 w-12" alt="salons feature">
+        <h3 class="text-[#36432A] font-imbue font-extralight text-3xl lg:text-4xl 2xl:text-[40px] leading-none">
           Google reviews and Yelp aggregated on every service page
         </h3>
         <p class="text-[#6B7066] text-base leading-[130%]">
@@ -873,9 +874,9 @@
       </div>
 
       <!-- Card 7 -->
-      <div class="flex flex-col items-center text-center p-8 gap-5 border border-[#CCCDC4]">
-        <img src="assets/images/salons-benefits-7.svg" class="salons-feature" alt="salons feature">
-        <h3 class="text-[#36432A] font-imbue font-extralight text-2xl md:text-3xl xl:text-[40px] leading-none">
+      <div class="flex flex-col items-center text-center md:p-8 p-6 gap-5 border border-[#CCCDC4]">
+        <img src="assets/images/salons-benefits-7.svg" class="salons-feature lg:w-auto md:w-16 w-12" alt="salons feature">
+        <h3 class="text-[#36432A] font-imbue font-extralight text-3xl lg:text-4xl 2xl:text-[40px] leading-none">
           Mobile-first tap-to-call and tap-to-book CTAs
         </h3>
         <p class="text-[#6B7066] text-base leading-[130%]">
@@ -884,9 +885,9 @@
       </div>
 
       <!-- Card 8 -->
-      <div class="flex flex-col items-center text-center p-8 gap-5 border border-[#CCCDC4]">
-        <img src="assets/images/salons-benefits-8.svg" class="salons-feature" alt="salons feature">
-        <h3 class="text-[#36432A] font-imbue font-extralight text-2xl md:text-3xl xl:text-[40px] leading-none">
+      <div class="flex flex-col items-center text-center md:p-8 p-6 gap-5 border border-[#CCCDC4]">
+        <img src="assets/images/salons-benefits-8.svg" class="salons-feature lg:w-auto md:w-16 w-12" alt="salons feature">
+        <h3 class="text-[#36432A] font-imbue font-extralight text-3xl lg:text-4xl 2xl:text-[40px] leading-none">
           Loyalty and membership signup built into the homepage
         </h3>
         <p class="text-[#6B7066] text-base leading-[130%]">
@@ -907,13 +908,13 @@
 
     <!-- Heading -->
     <div class="text-center max-w-[802px] w-full mx-auto mb-8 md:mb-12">
-      <h2 class="font-imperial-script text-[#BD8600] text-4xl md:text-6xl lg:text-[80px] font-normal leading-none">
+      <h2 class="font-imperial-script text-[#BD8600] text-4xl md:text-5xl lg:text-6xl 2xl:text-[80px] font-normal leading-none">
         8 specializations, one playbook
       </h2>
-      <h2 class="font-imbue text-white font-extralight leading-none text-4xl md:text-5xl lg:text-6xl xl:text-[80px] mt-4">
+      <h2 class="font-imbue text-white font-extralight leading-none text-[32px] md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-[80px] mt-4">
         Website design built around your specific salon or spa niche
       </h2>
-      <p class="mt-6 text-base leading-[130%] text-[#BEC5B7] max-w-[560px] mx-auto">
+      <p class="md:mt-6 mt-4 text-base leading-[130%] text-[#BEC5B7] max-w-[560px] mx-auto">
         A hair salon and a med spa sell to entirely different buyers in entirely different decision states. We design for the niche, not a generic 'salon' template.
       </p>
     </div>
@@ -922,8 +923,8 @@
     <div class="max-w-[1200px] mx-auto">
 
       <!-- Row 1 -->
-      <div class="group saloneandspas-spacification grid grid-cols-1 lg:grid-cols-[1fr_minmax(0,340px)_1fr] items-center gap-8 lg:gap-12 border-t border-[#4C5A3C] py-10 lg:py-14">
-        <h3 class="font-imbue font-extralight text-white leading-none text-2xl md:text-3xl xl:text-[40px]">Hair salon website design</h3>
+      <div class="group saloneandspas-spacification grid grid-cols-1 lg:grid-cols-[1fr_minmax(0,340px)_1fr] items-center gap-4 md:gap-8 lg:gap-12 border-t border-[#4C5A3C] py-6 md:py-10 lg:py-14">
+        <h3 class="font-imbue font-extralight text-white leading-none text-3xl md:text-4xl 2xl:text-[40px]">Hair salon website design</h3>
         <div class="order-first lg:order-none">
           <img src="assets/images/salons-niche-1.png" alt="Hair salon website design" class="w-full transition-transform duration-500 ease-out group-hover:rotate-0">
         </div>
@@ -931,8 +932,8 @@
       </div>
 
       <!-- Row 2 -->
-      <div class="group saloneandspas-spacification grid grid-cols-1 lg:grid-cols-[1fr_minmax(0,340px)_1fr] items-center gap-8 lg:gap-12 border-t border-[#4C5A3C] py-10 lg:py-14">
-        <h3 class="font-imbue font-extralight text-white leading-none text-2xl md:text-3xl xl:text-[40px]">Nail salon website design</h3>
+      <div class="group saloneandspas-spacification grid grid-cols-1 lg:grid-cols-[1fr_minmax(0,340px)_1fr] items-center gap-4 md:gap-8 lg:gap-12 border-t border-[#4C5A3C] py-6 md:py-10 lg:py-14">
+        <h3 class="font-imbue font-extralight text-white leading-none text-3xl md:text-4xl 2xl:text-[40px]">Nail salon website design</h3>
         <div class="order-first lg:order-none">
           <img src="assets/images/salons-niche-2.png" alt="Nail salon website design" class="w-full  transition-transform duration-500 ease-out group-hover:rotate-0">
         </div>
@@ -940,8 +941,8 @@
       </div>
 
       <!-- Row 3 -->
-      <div class="group saloneandspas-spacification grid grid-cols-1 lg:grid-cols-[1fr_minmax(0,340px)_1fr] items-center gap-8 lg:gap-12 border-t border-[#4C5A3C] py-10 lg:py-14">
-        <h3 class="font-imbue font-extralight text-white leading-none text-2xl md:text-3xl xl:text-[40px]">Med spa website design</h3>
+      <div class="group saloneandspas-spacification grid grid-cols-1 lg:grid-cols-[1fr_minmax(0,340px)_1fr] items-center gap-4 md:gap-8 lg:gap-12 border-t border-[#4C5A3C] py-6 md:py-10 lg:py-14">
+        <h3 class="font-imbue font-extralight text-white leading-none text-3xl md:text-4xl 2xl:text-[40px]">Med spa website design</h3>
         <div class="order-first lg:order-none">
           <img src="assets/images/salons-niche-3.png" alt="Med spa website design" class="w-full transition-transform duration-500 ease-out group-hover:rotate-0">
         </div>
@@ -949,8 +950,8 @@
       </div>
 
       <!-- Row 4 -->
-      <div class="group saloneandspas-spacification grid grid-cols-1 lg:grid-cols-[1fr_minmax(0,340px)_1fr] items-center gap-8 lg:gap-12 border-t border-[#4C5A3C] py-10 lg:py-14">
-        <h3 class="font-imbue font-extralight text-white leading-none text-2xl md:text-3xl xl:text-[40px]">Day spa website design</h3>
+      <div class="group saloneandspas-spacification grid grid-cols-1 lg:grid-cols-[1fr_minmax(0,340px)_1fr] items-center gap-4 md:gap-8 lg:gap-12 border-t border-[#4C5A3C] py-6 md:py-10 lg:py-14">
+        <h3 class="font-imbue font-extralight text-white leading-none text-3xl md:text-4xl 2xl:text-[40px]">Day spa website design</h3>
         <div class="order-first lg:order-none">
           <img src="assets/images/salons-niche-4.png" alt="Day spa website design" class="w-full  transition-transform duration-500 ease-out group-hover:rotate-0">
         </div>
@@ -958,8 +959,8 @@
       </div>
 
       <!-- Row 5 -->
-      <div class="group saloneandspas-spacification grid grid-cols-1 lg:grid-cols-[1fr_minmax(0,340px)_1fr] items-center gap-8 lg:gap-12 border-t border-[#4C5A3C] py-10 lg:py-14">
-        <h3 class="font-imbue font-extralight text-white leading-none text-2xl md:text-3xl xl:text-[40px]">Barbershop website design</h3>
+      <div class="group saloneandspas-spacification grid grid-cols-1 lg:grid-cols-[1fr_minmax(0,340px)_1fr] items-center gap-4 md:gap-8 lg:gap-12 border-t border-[#4C5A3C] py-6 md:py-10 lg:py-14">
+        <h3 class="font-imbue font-extralight text-white leading-none text-3xl md:text-4xl 2xl:text-[40px]">Barbershop website design</h3>
         <div class="order-first lg:order-none">
           <img src="assets/images/salons-niche-5.png" alt="Barbershop website design" class="w-full  transition-transform duration-500 ease-out group-hover:rotate-0">
         </div>
@@ -967,8 +968,8 @@
       </div>
 
       <!-- Row 6 -->
-      <div class="group saloneandspas-spacification grid grid-cols-1 lg:grid-cols-[1fr_minmax(0,340px)_1fr] items-center gap-8 lg:gap-12 border-t border-[#4C5A3C] py-10 lg:py-14">
-        <h3 class="font-imbue font-extralight text-white leading-none text-2xl md:text-3xl xl:text-[40px]">Lash and brow studio website design</h3>
+      <div class="group saloneandspas-spacification grid grid-cols-1 lg:grid-cols-[1fr_minmax(0,340px)_1fr] items-center gap-4 md:gap-8 lg:gap-12 border-t border-[#4C5A3C] py-6 md:py-10 lg:py-14">
+        <h3 class="font-imbue font-extralight text-white leading-none text-3xl md:text-4xl 2xl:text-[40px]">Lash and brow studio website design</h3>
         <div class="order-first lg:order-none">
           <img src="assets/images/salons-niche-6.png" alt="Lash and brow studio website design" class="w-full transition-transform duration-500 ease-out group-hover:rotate-0">
         </div>
@@ -976,8 +977,8 @@
       </div>
 
       <!-- Row 7 -->
-      <div class="group saloneandspas-spacification grid grid-cols-1 lg:grid-cols-[1fr_minmax(0,340px)_1fr] items-center gap-8 lg:gap-12 border-t border-[#4C5A3C] py-10 lg:py-14">
-        <h3 class="font-imbue font-extralight text-white leading-none text-2xl md:text-3xl xl:text-[40px]">Massage therapy website design</h3>
+      <div class="group saloneandspas-spacification grid grid-cols-1 lg:grid-cols-[1fr_minmax(0,340px)_1fr] items-center gap-4 md:gap-8 lg:gap-12 border-t border-[#4C5A3C] py-6 md:py-10 lg:py-14">
+        <h3 class="font-imbue font-extralight text-white leading-none text-3xl md:text-4xl 2xl:text-[40px]">Massage therapy website design</h3>
         <div class="order-first lg:order-none">
           <img src="assets/images/salons-niche-7.png" alt="Massage therapy website design" class="w-full  transition-transform duration-500 ease-out group-hover:rotate-0">
         </div>
@@ -985,8 +986,8 @@
       </div>
 
       <!-- Row 8 -->
-      <div class="group saloneandspas-spacification grid grid-cols-1 lg:grid-cols-[1fr_minmax(0,340px)_1fr] items-center gap-8 lg:gap-12 border-t border-b border-[#4C5A3C] py-10 lg:py-14">
-        <h3 class="font-imbue font-extralight text-white leading-none text-2xl md:text-3xl xl:text-[40px]">Color specialist salon website design</h3>
+      <div class="group saloneandspas-spacification grid grid-cols-1 lg:grid-cols-[1fr_minmax(0,340px)_1fr] items-center gap-4 md:gap-8 lg:gap-12 border-t border-b border-[#4C5A3C] py-10 lg:py-14">
+        <h3 class="font-imbue font-extralight text-white leading-none text-3xl md:text-4xl 2xl:text-[40px]">Color specialist salon website design</h3>
         <div class="order-first lg:order-none">
           <img src="assets/images/salons-niche-8.png" alt="Color specialist salon website design" class="w-full transition-transform duration-500 ease-out group-hover:rotate-0">
         </div>
@@ -1003,18 +1004,18 @@
 <!-- city SECTION -->
 <section class="pt-12 bg-[#F4EDDA]">
   <div class="container">
-    <div class="grid grid-cols-1 items-center gap-12 lg:grid-cols-[1.05fr_1.1fr_1fr] lg:gap-8">
+    <div class="grid grid-cols-1 items-center sm:gap-8 gap-6 md:gap-12 lg:grid-cols-[1.05fr_1.1fr_1fr] lg:gap-8">
 
       <!-- ---------- LEFT COLUMN ---------- -->
-      <div class="py-10">
-        <h2 class="font-imbue text-[#36432A] font-extralight leading-none text-4xl md:text-5xl lg:text-6xl xl:text-[80px]">
+      <div class="lg:py-10">
+        <h2 class="font-imbue text-[#36432A] font-extralight leading-none text-[32px] md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-[80px]">
           Salon and spa website design in your city
         </h2>
         <p class="mt-6 max-w-[480px] text-base leading-[130%] text-[#6B7066]">
           Beauty is a local-intent industry. Google ranks salon results by proximity and Google Business Profile quality. We optimize every site for the specific city, neighborhood, and search behavior of your local market.
         </p>
         <a href="contact.html"
-          class="mt-8 inline-flex items-center justify-center gap-[10px] bg-[#BD8600] px-8 py-5 font-['Archivo'] [font-stretch:semi-expanded] text-[16px] font-[700] uppercase leading-[1.3] tracking-wide text-white transition-colors hover:bg-[#a87700]">
+          class="mt-8 inline-flex items-center justify-center gap-[10px] bg-[#BD8600] sm:px-6 px-4 md:px-8 md:py-5 sm:py-4 py-3 text-[16px] font-[700] uppercase leading-[1.3] tracking-wide text-white transition-colors hover:bg-[#a87700]">
           Book a free 15-min call
         </a>
       </div>
@@ -1025,29 +1026,29 @@
       </div>
 
       <!-- ---------- RIGHT COLUMN (BADGES) ---------- -->
-      <div class="flex flex-wrap gap-1.5 py-10">
-        <span class="bg-[#36432A] px-4 py-2 text-base leading-[130%] text-[#BEC5B7]">New York City</span>
-        <span class="bg-[#36432A] px-4 py-2 text-base leading-[130%] text-[#BEC5B7]">Los Angeles</span>
-        <span class="bg-[#36432A] px-4 py-2 text-base leading-[130%] text-[#BEC5B7]">Chicago</span>
-        <span class="bg-[#36432A] px-4 py-2 text-base leading-[130%] text-[#BEC5B7]">Houston</span>
-        <span class="bg-[#36432A] px-4 py-2 text-base leading-[130%] text-[#BEC5B7]">Phoenix</span>
-        <span class="bg-[#36432A] px-4 py-2 text-base leading-[130%] text-[#BEC5B7]">Philadelphia</span>
-        <span class="bg-[#36432A] px-4 py-2 text-base leading-[130%] text-[#BEC5B7]">San Antonio</span>
-        <span class="bg-[#36432A] px-4 py-2 text-base leading-[130%] text-[#BEC5B7]">Dallas</span>
-        <span class="bg-[#36432A] px-4 py-2 text-base leading-[130%] text-[#BEC5B7]">Austin</span>
-        <span class="bg-[#36432A] px-4 py-2 text-base leading-[130%] text-[#BEC5B7]">Miami</span>
-        <span class="bg-[#36432A] px-4 py-2 text-base leading-[130%] text-[#BEC5B7]">Atlanta</span>
-        <span class="bg-[#36432A] px-4 py-2 text-base leading-[130%] text-[#BEC5B7]">Boston</span>
-        <span class="bg-[#36432A] px-4 py-2 text-base leading-[130%] text-[#BEC5B7]">Seattle</span>
-        <span class="bg-[#36432A] px-4 py-2 text-base leading-[130%] text-[#BEC5B7]">Denver</span>
-        <span class="bg-[#36432A] px-4 py-2 text-base leading-[130%] text-[#BEC5B7]">San Francisco</span>
-        <span class="bg-[#36432A] px-4 py-2 text-base leading-[130%] text-[#BEC5B7]">Las Vegas</span>
-        <span class="bg-[#36432A] px-4 py-2 text-base leading-[130%] text-[#BEC5B7]">Nashville</span>
-        <span class="bg-[#36432A] px-4 py-2 text-base leading-[130%] text-[#BEC5B7]">Charlotte</span>
-        <span class="bg-[#36432A] px-4 py-2 text-base leading-[130%] text-[#BEC5B7]">Portland</span>
-        <span class="bg-[#36432A] px-4 py-2 text-base leading-[130%] text-[#BEC5B7]">Scottsdale</span>
-        <span class="bg-[#36432A] px-4 py-2 text-base leading-[130%] text-[#BEC5B7]">Toronto</span>
-        <span class="bg-[#36432A] px-4 py-2 text-base leading-[130%] text-[#BEC5B7]">London</span>
+      <div class="flex flex-wrap gap-1.5 md:pt-10 sm:pt-6 pt-4  pb-10">
+        <span class="bg-[#36432A] px-3 sm:px-4 sm:py-2 py-1 sm:text-base text-sm leading-[130%] text-[#BEC5B7]">New York City</span>
+        <span class="bg-[#36432A] px-3 sm:px-4 sm:py-2 py-1 sm:text-base text-sm leading-[130%] text-[#BEC5B7]">Los Angeles</span>
+        <span class="bg-[#36432A] px-3 sm:px-4 sm:py-2 py-1 sm:text-base text-sm leading-[130%] text-[#BEC5B7]">Chicago</span>
+        <span class="bg-[#36432A] px-3 sm:px-4 sm:py-2 py-1 sm:text-base text-sm leading-[130%] text-[#BEC5B7]">Houston</span>
+        <span class="bg-[#36432A] px-3 sm:px-4 sm:py-2 py-1 sm:text-base text-sm leading-[130%] text-[#BEC5B7]">Phoenix</span>
+        <span class="bg-[#36432A] px-3 sm:px-4 sm:py-2 py-1 sm:text-base text-sm leading-[130%] text-[#BEC5B7]">Philadelphia</span>
+        <span class="bg-[#36432A] px-3 sm:px-4 sm:py-2 py-1 sm:text-base text-sm leading-[130%] text-[#BEC5B7]">San Antonio</span>
+        <span class="bg-[#36432A] px-3 sm:px-4 sm:py-2 py-1 sm:text-base text-sm leading-[130%] text-[#BEC5B7]">Dallas</span>
+        <span class="bg-[#36432A] px-3 sm:px-4 sm:py-2 py-1 sm:text-base text-sm leading-[130%] text-[#BEC5B7]">Austin</span>
+        <span class="bg-[#36432A] px-3 sm:px-4 sm:py-2 py-1 sm:text-base text-sm leading-[130%] text-[#BEC5B7]">Miami</span>
+        <span class="bg-[#36432A] px-3 sm:px-4 sm:py-2 py-1 sm:text-base text-sm leading-[130%] text-[#BEC5B7]">Atlanta</span>
+        <span class="bg-[#36432A] px-3 sm:px-4 sm:py-2 py-1 sm:text-base text-sm leading-[130%] text-[#BEC5B7]">Boston</span>
+        <span class="bg-[#36432A] px-3 sm:px-4 sm:py-2 py-1 sm:text-base text-sm leading-[130%] text-[#BEC5B7]">Seattle</span>
+        <span class="bg-[#36432A] px-3 sm:px-4 sm:py-2 py-1 sm:text-base text-sm leading-[130%] text-[#BEC5B7]">Denver</span>
+        <span class="bg-[#36432A] px-3 sm:px-4 sm:py-2 py-1 sm:text-base text-sm leading-[130%] text-[#BEC5B7]">San Francisco</span>
+        <span class="bg-[#36432A] px-3 sm:px-4 sm:py-2 py-1 sm:text-base text-sm leading-[130%] text-[#BEC5B7]">Las Vegas</span>
+        <span class="bg-[#36432A] px-3 sm:px-4 sm:py-2 py-1 sm:text-base text-sm leading-[130%] text-[#BEC5B7]">Nashville</span>
+        <span class="bg-[#36432A] px-3 sm:px-4 sm:py-2 py-1 sm:text-base text-sm leading-[130%] text-[#BEC5B7]">Charlotte</span>
+        <span class="bg-[#36432A] px-3 sm:px-4 sm:py-2 py-1 sm:text-base text-sm leading-[130%] text-[#BEC5B7]">Portland</span>
+        <span class="bg-[#36432A] px-3 sm:px-4 sm:py-2 py-1 sm:text-base text-sm leading-[130%] text-[#BEC5B7]">Scottsdale</span>
+        <span class="bg-[#36432A] px-3 sm:px-4 sm:py-2 py-1 sm:text-base text-sm leading-[130%] text-[#BEC5B7]">Toronto</span>
+        <span class="bg-[#36432A] px-3 sm:px-4 sm:py-2 py-1 sm:text-base text-sm leading-[130%] text-[#BEC5B7]">London</span>
       </div>
 
     </div>
@@ -1060,14 +1061,14 @@
   <div class="container">
 
     <!-- Heading -->
-    <div class="text-center max-w-[992px] w-full mx-auto mb-12 md:mb-16">
-      <h2 class="font-imperial-script text-[#BD8600] text-4xl md:text-6xl lg:text-[80px] font-normal leading-none">
+    <div class="text-center max-w-[992px] w-full mx-auto mb-8 sm:mb-12 md:mb-16">
+      <h2 class="font-imperial-script text-[#BD8600] text-4xl md:text-5xl lg:text-6xl 2xl:text-[80px] font-normal leading-none">
         14 days &middot; 4 phases
       </h2>
-      <h2 class="font-imbue text-white font-extralight leading-none text-4xl md:text-5xl lg:text-6xl xl:text-[80px] mt-4">
+      <h2 class="font-imbue text-white font-extralight leading-none text-[32px] md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-[80px] mt-4">
         From discovery call to launched site in 14 days
       </h2>
-      <p class="mt-6 text-base leading-[130%] text-[#BEC5B7] max-w-[560px] mx-auto">
+      <p class="md:mt-6 mt-4 text-base leading-[130%] text-[#BEC5B7] max-w-[560px] mx-auto">
         Most beauty marketing agencies take 60 to 90 days for the same scope. We don't, because the package is productized &mdash; same caliber of work, less margin per project, faster turnaround.
       </p>
     </div>
@@ -1084,29 +1085,29 @@
 
         <!-- Phase 1 -->
         <div class="flex flex-col items-center text-center gap-4">
-          <span class="inline-flex items-center justify-center bg-[#BD8600] px-2 py-1 font-['Instrument_Serif'] text-xl leading-[110%] uppercase text-white">Day 1</span>
-          <h3 class="font-imbue font-extralight text-white leading-none text-3xl xl:text-[40px]">Discovery</h3>
+          <span class="inline-flex items-center justify-center bg-[#BD8600] px-2 py-1 md:text-lg text-base xl:text-xl leading-[110%] uppercase text-white">Day 1</span>
+          <h3 class="font-imbue font-extralight text-white leading-none text-3xl md:text-4xl 2xl:text-[40px]">Discovery</h3>
           <p class="max-w-[280px] text-base leading-[130%] text-[#BEC5B7]">90-minute kickoff call. Service menu audit. Booking platform setup. Competitor review of three salons outranking you.</p>
         </div>
 
         <!-- Phase 2 -->
         <div class="flex flex-col items-center text-center gap-4">
-          <span class="inline-flex items-center justify-center bg-[#BD8600] px-2 py-1 font-['Instrument_Serif'] text-xl leading-[110%] uppercase text-white">Days 3-7</span>
-          <h3 class="font-imbue font-extralight text-white leading-none text-3xl xl:text-[40px]">Brand + design</h3>
+          <span class="inline-flex items-center justify-center bg-[#BD8600] px-2 py-1 md:text-lg text-base xl:text-xl leading-[110%] uppercase text-white">Days 3-7</span>
+          <h3 class="font-imbue font-extralight text-white leading-none text-3xl md:text-4xl 2xl:text-[40px]">Brand + design</h3>
           <p class="max-w-[280px] text-base leading-[130%] text-[#BEC5B7]">Logo, palette, typography. Wireframes and design comps. One round of revision built into the timeline.</p>
         </div>
 
         <!-- Phase 3 -->
         <div class="flex flex-col items-center text-center gap-4">
-          <span class="inline-flex items-center justify-center bg-[#BD8600] px-2 py-1 font-['Instrument_Serif'] text-xl leading-[110%] uppercase text-white">Days 8-12</span>
-          <h3 class="font-imbue font-extralight text-white leading-none text-3xl xl:text-[40px]">Build + SEO</h3>
+          <span class="inline-flex items-center justify-center bg-[#BD8600] px-2 py-1 md:text-lg text-base xl:text-xl leading-[110%] uppercase text-white">Days 8-12</span>
+          <h3 class="font-imbue font-extralight text-white leading-none text-3xl md:text-4xl 2xl:text-[40px]">Build + SEO</h3>
           <p class="max-w-[280px] text-base leading-[130%] text-[#BEC5B7]">Mobile-first build. SEO content. Schema markup. Booking integration. Image optimization for speed.</p>
         </div>
 
         <!-- Phase 4 -->
         <div class="flex flex-col items-center text-center gap-4">
-          <span class="inline-flex items-center justify-center bg-[#BD8600] px-2 py-1 font-['Instrument_Serif'] text-xl leading-[110%] uppercase text-white">Days 13-14</span>
-          <h3 class="font-imbue font-extralight text-white leading-none text-3xl xl:text-[40px]">Launch + GBP</h3>
+          <span class="inline-flex items-center justify-center bg-[#BD8600] px-2 py-1 md:text-lg text-base xl:text-xl leading-[110%] uppercase text-white">Days 13-14</span>
+          <h3 class="font-imbue font-extralight text-white leading-none text-3xl md:text-4xl 2xl:text-[40px]">Launch + GBP</h3>
           <p class="max-w-[280px] text-base leading-[130%] text-[#BEC5B7]">Domain pointing, Search Console verification, Google Business Profile rebuild, CMS training, handoff.</p>
         </div>
 
@@ -1124,14 +1125,14 @@
   <div class="container">
 
     <!-- Heading -->
-    <div class="text-center max-w-[992px] w-full mx-auto mb-12 md:mb-16">
-      <h2 class="font-imperial-script text-[#BD8600] text-4xl md:text-6xl lg:text-[80px] font-normal leading-none">
+    <div class="text-center max-w-[992px] w-full mx-auto mb-8 sm:mb-12 md:mb-16">
+      <h2 class="font-imperial-script text-[#BD8600] text-4xl md:text-5xl lg:text-6xl 2xl:text-[80px] font-normal leading-none">
         Recent salon and spa projects
       </h2>
-      <h2 class="font-imbue text-[#36432A] font-extralight leading-none text-4xl md:text-5xl lg:text-6xl xl:text-[80px] mt-4">
+      <h2 class="font-imbue text-[#36432A] font-extralight leading-none text-[32px] md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-[80px] sm:mt-4 mt-3">
         Real salon and spa websites we've built
       </h2>
-      <p class="mt-6 text-base leading-[130%] text-[#6B7066] max-w-[620px] mx-auto">
+      <p class="mt-4 lg:mt-6 text-base leading-[130%] text-[#6B7066] max-w-[620px] mx-auto">
         Click any case study for the metrics, the redesign rationale, and the conversion lift after launch.
       </p>
     </div>
@@ -1142,22 +1143,22 @@
       <!-- Card 1 -->
       <a href="case-study.html" class="group grid grid-cols-1 lg:grid-cols-2 items-stretch transition-shadow duration-300 hover:shadow-xl">
         <img src="assets/images/salons-case-1.jpg" alt="Halo Color Studio" class="w-full h-full object-cover min-h-[280px]">
-        <div class="bg-white p-8 lg:p-12 flex flex-col">
-          <span class="inline-flex self-start items-center justify-center bg-[#BD8600] px-4 py-2 text-base leading-[130%] text-white">Color specialist</span>
-          <h3 class="mt-6 font-imbue font-extralight text-[#36432A] leading-none text-3xl xl:text-[40px]">Halo Color Studio</h3>
+        <div class="bg-white p-4 md:p-8 lg:p-12 flex flex-col">
+          <span class="inline-flex self-start items-center justify-center bg-[#BD8600] px-3 sm:px-4 sm:py-2 py-1 text-sm sm:text-base leading-[130%] text-white">Color specialist</span>
+          <h3 class="mt-4 sm:mt-6 font-imbue font-extralight text-[#36432A] leading-none text-3xl md:text-4xl 2xl:text-[40px]">Halo Color Studio</h3>
           <p class="mt-4 text-base leading-[130%] text-[#6B7066]">Online bookings up 214% in 4 months. Now booked 6 weeks out for balayage.</p>
           <div class="mt-auto pt-10 grid grid-cols-3 gap-4">
             <div>
-              <p class="font-imbue font-extralight text-[#36432A] leading-none text-[28px] xl:text-[32px]">214%</p>
-              <p class="mt-2 text-base leading-[130%] text-[#6B7066]">Online bookings increase</p>
+              <p class="font-imbue font-extralight text-[#36432A] leading-none text-2xl md:text-[28px] 2xl:text-[32px]">214%</p>
+              <p class="mt-2 sm:text-base text-sm leading-[130%] text-[#6B7066]">Online bookings increase</p>
             </div>
             <div>
-              <p class="font-imbue font-extralight text-[#36432A] leading-none text-[28px] xl:text-[32px]">6 weeks</p>
-              <p class="mt-2 text-base leading-[130%] text-[#6B7066]">Booked in advance</p>
+              <p class="font-imbue font-extralight text-[#36432A] leading-none text-2xl md:text-[28px] 2xl:text-[32px]">6 weeks</p>
+              <p class="mt-2 sm:text-base text-sm leading-[130%] text-[#6B7066]">Booked in advance</p>
             </div>
             <div>
-              <p class="font-imbue font-extralight text-[#36432A] leading-none text-[28px] xl:text-[32px]">3.2x</p>
-              <p class="mt-2 text-base leading-[130%] text-[#6B7066]">More repeat clients</p>
+              <p class="font-imbue font-extralight text-[#36432A] leading-none text-2xl md:text-[28px] 2xl:text-[32px]">3.2x</p>
+              <p class="mt-2 sm:text-base text-sm leading-[130%] text-[#6B7066]">More repeat clients</p>
             </div>
           </div>
         </div>
@@ -1166,22 +1167,22 @@
       <!-- Card 2 -->
       <a href="case-study.html" class="group grid grid-cols-1 lg:grid-cols-2 items-stretch transition-shadow duration-300 hover:shadow-xl">
         <img src="assets/images/salons-case-2.jpg" alt="Glow Aesthetic Lounge" class="w-full h-full object-cover min-h-[280px]">
-        <div class="bg-white p-8 lg:p-12 flex flex-col">
-          <span class="inline-flex self-start items-center justify-center bg-[#BD8600] px-4 py-2 text-base leading-[130%] text-white">Med spa</span>
-          <h3 class="mt-6 font-imbue font-extralight text-[#36432A] leading-none text-3xl xl:text-[40px]">Glow Aesthetic Lounge</h3>
+        <div class="bg-white p-4 md:p-8 lg:p-12 flex flex-col">
+          <span class="inline-flex self-start items-center justify-center bg-[#BD8600] px-3 sm:px-4 sm:py-2 py-1 text-sm sm:text-base leading-[130%] text-white">Med spa</span>
+          <h3 class="mt-4 sm:mt-6 font-imbue font-extralight text-[#36432A] leading-none text-3xl md:text-4xl 2xl:text-[40px]">Glow Aesthetic Lounge</h3>
           <p class="mt-4 text-base leading-[130%] text-[#6B7066]">From 8 monthly consultation requests to 47. Botox revenue tripled in 90 days.</p>
           <div class="mt-auto pt-10 grid grid-cols-3 gap-4">
             <div>
-              <p class="font-imbue font-extralight text-[#36432A] leading-none text-[28px] xl:text-[32px]">8 &rarr; 47</p>
-              <p class="mt-2 text-base leading-[130%] text-[#6B7066]">Monthly consultation requests</p>
+              <p class="font-imbue font-extralight text-[#36432A] leading-none text-2xl md:text-[28px] 2xl:text-[32px]">8 &rarr; 47</p>
+              <p class="mt-2 sm:text-base text-sm leading-[130%] text-[#6B7066]">Monthly consultation requests</p>
             </div>
             <div>
-              <p class="font-imbue font-extralight text-[#36432A] leading-none text-[28px] xl:text-[32px]">3x</p>
-              <p class="mt-2 text-base leading-[130%] text-[#6B7066]">Revenue growth in 90 days</p>
+              <p class="font-imbue font-extralight text-[#36432A] leading-none text-2xl md:text-[28px] 2xl:text-[32px]">3x</p>
+              <p class="mt-2 sm:text-base text-sm leading-[130%] text-[#6B7066]">Revenue growth in 90 days</p>
             </div>
             <div>
-              <p class="font-imbue font-extralight text-[#36432A] leading-none text-[28px] xl:text-[32px]">90 days</p>
-              <p class="mt-2 text-base leading-[130%] text-[#6B7066]">To triple Botox revenue</p>
+              <p class="font-imbue font-extralight text-[#36432A] leading-none text-2xl md:text-[28px] 2xl:text-[32px]">90 days</p>
+              <p class="mt-2 sm:text-base text-sm leading-[130%] text-[#6B7066]">To triple Botox revenue</p>
             </div>
           </div>
         </div>
@@ -1190,22 +1191,22 @@
       <!-- Card 3 -->
       <a href="case-study.html" class="group grid grid-cols-1 lg:grid-cols-2 items-stretch transition-shadow duration-300 hover:shadow-xl">
         <img src="assets/images/salons-case-3.jpg" alt="Lacquer & Co." class="w-full h-full object-cover min-h-[280px]">
-        <div class="bg-white p-8 lg:p-12 flex flex-col">
-          <span class="inline-flex self-start items-center justify-center bg-[#BD8600] px-4 py-2 text-base leading-[130%] text-white">Nail studio</span>
-          <h3 class="mt-6 font-imbue font-extralight text-[#36432A] leading-none text-3xl xl:text-[40px]">Lacquer &amp; Co.</h3>
+        <div class="bg-white p-4 md:p-8 lg:p-12 flex flex-col">
+          <span class="inline-flex self-start items-center justify-center bg-[#BD8600] px-3 sm:px-4 sm:py-2 py-1 text-sm sm:text-base leading-[130%] text-white">Nail studio</span>
+          <h3 class="mt-4 sm:mt-6 font-imbue font-extralight text-[#36432A] leading-none text-3xl md:text-4xl 2xl:text-[40px]">Lacquer &amp; Co.</h3>
           <p class="mt-4 text-base leading-[130%] text-[#6B7066]">'Nail salon near me' ranking moved from page 4 to local 3-pack in 11 weeks.</p>
           <div class="mt-auto pt-10 grid grid-cols-3 gap-4">
             <div>
-              <p class="font-imbue font-extralight text-[#36432A] leading-none text-[28px] xl:text-[32px]">+3 pages</p>
-              <p class="mt-2 text-base leading-[130%] text-[#6B7066]">Ranking jump</p>
+              <p class="font-imbue font-extralight text-[#36432A] leading-none text-2xl md:text-[28px] 2xl:text-[32px]">+3 pages</p>
+              <p class="mt-2 sm:text-base text-sm leading-[130%] text-[#6B7066]">Ranking jump</p>
             </div>
             <div>
-              <p class="font-imbue font-extralight text-[#36432A] leading-none text-[28px] xl:text-[32px]">11 weeks</p>
-              <p class="mt-2 text-base leading-[130%] text-[#6B7066]">To reach top results</p>
+              <p class="font-imbue font-extralight text-[#36432A] leading-none text-2xl md:text-[28px] 2xl:text-[32px]">11 weeks</p>
+              <p class="mt-2 sm:text-base text-sm leading-[130%] text-[#6B7066]">To reach top results</p>
             </div>
             <div>
-              <p class="font-imbue font-extralight text-[#36432A] leading-none text-[28px] xl:text-[32px]">Top 3</p>
-              <p class="mt-2 text-base leading-[130%] text-[#6B7066]">Local visibility achieved</p>
+              <p class="font-imbue font-extralight text-[#36432A] leading-none text-2xl md:text-[28px] 2xl:text-[32px]">Top 3</p>
+              <p class="mt-2 sm:text-base text-sm leading-[130%] text-[#6B7066]">Local visibility achieved</p>
             </div>
           </div>
         </div>
@@ -1223,105 +1224,105 @@
 
     <!-- Heading -->
     <div class="text-center max-w-[992px] w-full mx-auto mb-8 md:mb-12">
-      <h2 class="font-imperial-script text-[#BD8600] text-4xl md:text-6xl lg:text-[80px] font-normal leading-none">
+      <h2 class="font-imperial-script text-[#BD8600] text-4xl md:text-5xl lg:text-6xl 2xl:text-[80px] font-normal leading-none">
         Platform + integrations
       </h2>
-      <h2 class="font-imbue text-white font-extralight leading-none text-4xl md:text-5xl lg:text-6xl xl:text-[80px] mt-4">
+      <h2 class="font-imbue text-white font-extralight leading-none text-[32px] md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-[80px] mt-4">
         The right platform for your salon
       </h2>
-      <p class="mt-6 text-base leading-[130%] text-[#BEC5B7] max-w-[720px] mx-auto">
+      <p class="mt-4 sm:mt-6 text-base leading-[130%] text-[#BEC5B7] max-w-[720px] mx-auto">
         We default to WordPress for SEO control and Webflow for visual-heavy salons. The booking platform you already use (Vagaro, Booksy, Square Appointments, GlossGenius) integrates into either.
       </p>
     </div>
 
     <!-- Comparison table -->
-    <div class="container overflow-x-auto">
+    <div class="overflow-x-auto custom-scroll">
       <div class="min-w-[720px]">
 
         <!-- Header row -->
         <div class="grid grid-cols-4 bg-[#27351B] items-center">
-          <div class="p-6">
+          <div class="md:p-6 p-4">
             <span class="font-imbue font-extralight text-white text-2xl md:text-3xl leading-none">Features</span>
           </div>
           <div class="p-6 flex items-center gap-3">
-            <img src="assets/images/platform-wordpress-salon.svg" class="img-fluid" alt="platform">
+            <img src="assets/images/platform-wordpress-salon.svg" class="img-fluid md:w-auto w-8" alt="platform">
             <span class="font-imbue font-extralight text-white text-2xl md:text-3xl leading-none">WordPress</span>
           </div>
           <div class="p-6 flex items-center gap-3">
-             <img src="assets/images/platform-webflow-salon.svg" class="img-fluid" alt="platform">
+             <img src="assets/images/platform-webflow-salon.svg" class="img-fluid md:w-auto w-8" alt="platform">
             <span class="font-imbue font-extralight text-white text-2xl md:text-3xl leading-none">Webflow</span>
           </div>
           <div class="p-6 flex items-center gap-3">
-             <img src="assets/images/platform-squarespace-salon.svg" class="img-fluid" alt="platform">
+             <img src="assets/images/platform-squarespace-salon.svg" class="img-fluid md:w-auto w-8" alt="platform">
             <span class="font-imbue font-extralight text-white text-2xl md:text-3xl leading-none">Squarespace</span>
           </div>
         </div>
 
         <!-- Row 1 -->
         <div class="grid grid-cols-4 border-t border-[#56614C]">
-          <div class="p-6"><span class="text-base leading-[130%] text-[#BEC5B7]">Best for</span></div>
-          <div class="p-6"><span class="text-base leading-[130%] text-[#BEC5B7]">Multi-location, SEO-heavy</span></div>
-          <div class="p-6"><span class="text-base leading-[130%] text-[#BEC5B7]">Visual single-location</span></div>
-          <div class="p-6"><span class="text-base leading-[130%] text-[#BEC5B7]">DIY before this package</span></div>
+          <div class="md:p-6 sm:p-4 p-3"><span class="text-base leading-[130%] text-[#BEC5B7]">Best for</span></div>
+          <div class="md:p-6 sm:p-4 p-3"><span class="text-base leading-[130%] text-[#BEC5B7]">Multi-location, SEO-heavy</span></div>
+          <div class="md:p-6 sm:p-4 p-3"><span class="text-base leading-[130%] text-[#BEC5B7]">Visual single-location</span></div>
+          <div class="md:p-6 sm:p-4 p-3"><span class="text-base leading-[130%] text-[#BEC5B7]">DIY before this package</span></div>
         </div>
 
         <!-- Row 2 -->
         <div class="grid grid-cols-4 border-t border-[#56614C]">
-          <div class="p-6"><span class="text-base leading-[130%] text-[#BEC5B7]">SEO control</span></div>
-          <div class="p-6"><span class="text-base leading-[130%] text-[#BEC5B7]">Full</span></div>
-          <div class="p-6"><span class="text-base leading-[130%] text-[#BEC5B7]">Strong</span></div>
-          <div class="p-6"><span class="text-base leading-[130%] text-[#BEC5B7]">Limited</span></div>
+          <div class="md:p-6 sm:p-4 p-3"><span class="text-base leading-[130%] text-[#BEC5B7]">SEO control</span></div>
+          <div class="md:p-6 sm:p-4 p-3"><span class="text-base leading-[130%] text-[#BEC5B7]">Full</span></div>
+          <div class="md:p-6 sm:p-4 p-3"><span class="text-base leading-[130%] text-[#BEC5B7]">Strong</span></div>
+          <div class="md:p-6 sm:p-4 p-3"><span class="text-base leading-[130%] text-[#BEC5B7]">Limited</span></div>
         </div>
 
         <!-- Row 3 -->
         <div class="grid grid-cols-4 border-t border-[#56614C]">
-          <div class="p-6"><span class="text-base leading-[130%] text-[#BEC5B7]">Booking integration</span></div>
-          <div class="p-6"><span class="text-base leading-[130%] text-[#BEC5B7]">Any platform</span></div>
-          <div class="p-6"><span class="text-base leading-[130%] text-[#BEC5B7]">Any platform</span></div>
-          <div class="p-6"><span class="text-base leading-[130%] text-[#BEC5B7]">Native or iframe</span></div>
+          <div class="md:p-6 sm:p-4 p-3"><span class="text-base leading-[130%] text-[#BEC5B7]">Booking integration</span></div>
+          <div class="md:p-6 sm:p-4 p-3"><span class="text-base leading-[130%] text-[#BEC5B7]">Any platform</span></div>
+          <div class="md:p-6 sm:p-4 p-3"><span class="text-base leading-[130%] text-[#BEC5B7]">Any platform</span></div>
+          <div class="md:p-6 sm:p-4 p-3"><span class="text-base leading-[130%] text-[#BEC5B7]">Native or iframe</span></div>
         </div>
 
         <!-- Row 4 -->
         <div class="grid grid-cols-4 border-t border-[#56614C]">
-          <div class="p-6"><span class="text-base leading-[130%] text-[#BEC5B7]">Monthly cost</span></div>
-          <div class="p-6"><span class="text-base leading-[130%] text-[#BEC5B7]">$15-35</span></div>
-          <div class="p-6"><span class="text-base leading-[130%] text-[#BEC5B7]">$23-39</span></div>
-          <div class="p-6"><span class="text-base leading-[130%] text-[#BEC5B7]">$23-49</span></div>
+          <div class="md:p-6 sm:p-4 p-3"><span class="text-base leading-[130%] text-[#BEC5B7]">Monthly cost</span></div>
+          <div class="md:p-6 sm:p-4 p-3"><span class="text-base leading-[130%] text-[#BEC5B7]">$15-35</span></div>
+          <div class="md:p-6 sm:p-4 p-3"><span class="text-base leading-[130%] text-[#BEC5B7]">$23-39</span></div>
+          <div class="md:p-6 sm:p-4 p-3"><span class="text-base leading-[130%] text-[#BEC5B7]">$23-49</span></div>
         </div>
 
         <!-- Row 5 -->
         <div class="grid grid-cols-4 border-t border-b border-[#56614C]">
-          <div class="p-6"><span class="text-base leading-[130%] text-[#BEC5B7]">Customization</span></div>
-          <div class="p-6"><span class="text-base leading-[130%] text-[#BEC5B7]">Unlimited</span></div>
-          <div class="p-6"><span class="text-base leading-[130%] text-[#BEC5B7]">High</span></div>
-          <div class="p-6"><span class="text-base leading-[130%] text-[#BEC5B7]">Template-bound</span></div>
+          <div class="md:p-6 sm:p-4 p-3"><span class="text-base leading-[130%] text-[#BEC5B7]">Customization</span></div>
+          <div class="md:p-6 sm:p-4 p-3"><span class="text-base leading-[130%] text-[#BEC5B7]">Unlimited</span></div>
+          <div class="md:p-6 sm:p-4 p-3"><span class="text-base leading-[130%] text-[#BEC5B7]">High</span></div>
+          <div class="md:p-6 sm:p-4 p-3"><span class="text-base leading-[130%] text-[#BEC5B7]">Template-bound</span></div>
         </div>
 
       </div>
     </div>
 
     <!-- Integrations badges -->
-    <div class="text-center mt-16 md:mt-20">
-      <h2 class="font-imbue text-white font-extralight leading-none text-3xl md:text-4xl xl:text-[48px] mb-8">
+    <div class="text-center mt-10 md:mt-20 sm:mt-16">
+      <h2 class="font-imbue text-white font-extralight leading-none text-2xl md:text-3xl xl:text-4xl 2xl:text-[48px] mb-8">
         Integrations built into every package
       </h2>
 
-      <div class="flex flex-wrap justify-center gap-2 max-w-[900px] mx-auto">
-        <span class="bg-[#27351B] px-4 py-2 text-base leading-[130%] text-[#BEC5B7]">Vagaro</span>
-        <span class="bg-[#27351B] px-4 py-2 text-base leading-[130%] text-[#BEC5B7]">Booksy</span>
-        <span class="bg-[#27351B] px-4 py-2 text-base leading-[130%] text-[#BEC5B7]">Square Appointments</span>
-        <span class="bg-[#27351B] px-4 py-2 text-base leading-[130%] text-[#BEC5B7]">Mindbody</span>
-        <span class="bg-[#27351B] px-4 py-2 text-base leading-[130%] text-[#BEC5B7]">GlossGenius</span>
-        <span class="bg-[#27351B] px-4 py-2 text-base leading-[130%] text-[#BEC5B7]">Schedulicity</span>
-        <span class="bg-[#27351B] px-4 py-2 text-base leading-[130%] text-[#BEC5B7]">Acuity</span>
+      <div class="flex flex-wrap justify-center sm:gap-2 gap-1 max-w-[900px] mx-auto">
+        <span class="bg-[#27351B] px-3 sm:px-4 py-1 sm:py-2 text-sm sm:text-base leading-[130%] text-[#BEC5B7]">Vagaro</span>
+        <span class="bg-[#27351B] px-3 sm:px-4 py-1 sm:py-2 text-sm sm:text-base leading-[130%] text-[#BEC5B7]">Booksy</span>
+        <span class="bg-[#27351B] px-3 sm:px-4 py-1 sm:py-2 text-sm sm:text-base leading-[130%] text-[#BEC5B7]">Square Appointments</span>
+        <span class="bg-[#27351B] px-3 sm:px-4 py-1 sm:py-2 text-sm sm:text-base leading-[130%] text-[#BEC5B7]">Mindbody</span>
+        <span class="bg-[#27351B] px-3 sm:px-4 py-1 sm:py-2 text-sm sm:text-base leading-[130%] text-[#BEC5B7]">GlossGenius</span>
+        <span class="bg-[#27351B] px-3 sm:px-4 py-1 sm:py-2 text-sm sm:text-base leading-[130%] text-[#BEC5B7]">Schedulicity</span>
+        <span class="bg-[#27351B] px-3 sm:px-4 py-1 sm:py-2 text-sm sm:text-base leading-[130%] text-[#BEC5B7]">Acuity</span>
       </div>
-      <div class="flex flex-wrap justify-center gap-2 max-w-[900px] mx-auto mt-2">
-        <span class="bg-[#27351B] px-4 py-2 text-base leading-[130%] text-[#BEC5B7]">Google Business Profile</span>
-        <span class="bg-[#27351B] px-4 py-2 text-base leading-[130%] text-[#BEC5B7]">Yelp reviews</span>
-        <span class="bg-[#27351B] px-4 py-2 text-base leading-[130%] text-[#BEC5B7]">Instagram feed</span>
-        <span class="bg-[#27351B] px-4 py-2 text-base leading-[130%] text-[#BEC5B7]">Mailchimp</span>
-        <span class="bg-[#27351B] px-4 py-2 text-base leading-[130%] text-[#BEC5B7]">Klaviyo</span>
-        <span class="bg-[#27351B] px-4 py-2 text-base leading-[130%] text-[#BEC5B7]">Stripe</span>
+      <div class="flex flex-wrap justify-center sm:gap-2 gap-1 max-w-[900px] mx-auto mt-2">
+        <span class="bg-[#27351B] px-3 sm:px-4 py-1 sm:py-2 text-sm sm:text-base leading-[130%] text-[#BEC5B7]">Google Business Profile</span>
+        <span class="bg-[#27351B] px-3 sm:px-4 py-1 sm:py-2 text-sm sm:text-base leading-[130%] text-[#BEC5B7]">Yelp reviews</span>
+        <span class="bg-[#27351B] px-3 sm:px-4 py-1 sm:py-2 text-sm sm:text-base leading-[130%] text-[#BEC5B7]">Instagram feed</span>
+        <span class="bg-[#27351B] px-3 sm:px-4 py-1 sm:py-2 text-sm sm:text-base leading-[130%] text-[#BEC5B7]">Mailchimp</span>
+        <span class="bg-[#27351B] px-3 sm:px-4 py-1 sm:py-2 text-sm sm:text-base leading-[130%] text-[#BEC5B7]">Klaviyo</span>
+        <span class="bg-[#27351B] px-3 sm:px-4 py-1 sm:py-2 text-sm sm:text-base leading-[130%] text-[#BEC5B7]">Stripe</span>
       </div>
     </div>
 
@@ -1337,10 +1338,10 @@
 
     <!-- Heading -->
     <div class="text-center max-w-[1300px] w-full mx-auto mb-12 md:mb-16">
-      <h2 class="font-imperial-script text-[#BD8600] text-4xl md:text-6xl lg:text-[80px] font-normal leading-none">
+      <h2 class="font-imperial-script text-[#BD8600] text-4xl md:text-5xl lg:text-6xl 2xl:text-[80px] font-normal leading-none">
         Honest comparison
       </h2>
-      <h2 class="font-imbue text-[#36432A] font-extralight leading-none text-4xl md:text-5xl lg:text-6xl xl:text-[80px] mt-4">
+      <h2 class="font-imbue text-[#36432A] font-extralight leading-none text-[32px] md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-[80px] sm:mt-4 mt-3">
         Pixxen vs Vagaro free site vs full-service salon agency
       </h2>
       <p class="mt-6 text-base leading-[130%] text-[#6B7066] max-w-[720px] mx-auto">
@@ -1349,80 +1350,80 @@
     </div>
 
     <!-- Comparison table -->
-    <div class="container overflow-x-auto">
+    <div class="overflow-x-auto custom-scroll">
       <div class="min-w-[860px] bg-[#FBF9F4]">
 
         <!-- Header row -->
         <div class="grid grid-cols-4">
-          <div class="bg-[#F0E4C8] p-6">
-            <span class="font-imbue font-extralight text-[#36432A] text-2xl md:text-3xl xl:text-[40px] leading-none">Features</span>
+          <div class="bg-[#F0E4C8] md:p-6 p-4">
+            <span class="font-imbue font-extralight text-[#36432A] text-2xl md:text-[28px] lg:text-3xl 2xl:text-[40px] leading-none">Features</span>
           </div>
-          <div class="bg-[#BD8600] p-6 flex items-center gap-3">
-            <img src="assets/images/pixxen-logo-salonspa.svg" class="img-fluid" alt="logo">
-            <span class="font-imbue font-extralight text-white text-2xl md:text-3xl xl:text-[40px] leading-none">Pixxen $999 Pack</span>
+          <div class="bg-[#BD8600] md:p-6 p-4 flex items-center gap-2 md:gap-3">
+            <img src="assets/images/pixxen-logo-salonspa.svg" class="img-fluid md:w-auto w-[32px]" alt="logo">
+            <span class="font-imbue font-extralight text-white text-2xl md:text-[28px] lg:text-3xl 2xl:text-[40px] leading-none">Pixxen $999 Pack</span>
           </div>
-          <div class="bg-[#F0E4C8] p-6">
-            <span class="font-imbue font-extralight text-[#36432A] text-2xl md:text-3xl xl:text-[40px] leading-none">Vagaro free site</span>
+          <div class="bg-[#F0E4C8] md:p-6 p-4">
+            <span class="font-imbue font-extralight text-[#36432A] text-2xl md:text-[28px] lg:text-3xl 2xl:text-[40px] leading-none">Vagaro free site</span>
           </div>
-          <div class="bg-[#F0E4C8] p-6">
-            <span class="font-imbue font-extralight text-[#36432A] text-2xl md:text-3xl xl:text-[40px] leading-none">Full-service agency</span>
+          <div class="bg-[#F0E4C8] md:p-6 p-4">
+            <span class="font-imbue font-extralight text-[#36432A] text-2xl md:text-[28px] lg:text-3xl 2xl:text-[40px] leading-none">Full-service agency</span>
           </div>
         </div>
 
         <!-- Row 1 -->
         <div class="grid grid-cols-4">
-          <div class="p-6 border-b border-[#CCCDC4]"><span class="font-['Archivo'] [font-stretch:semi-expanded] text-base leading-[130%] text-[#6B7066]">Total first-year cost</span></div>
-          <div class="p-6 border-b border-[#CCCDC4]"><span class="font-['Archivo'] [font-stretch:semi-expanded] text-base leading-[130%] text-[#6B7066]">$999 one-time</span></div>
-          <div class="p-6 border-b border-[#CCCDC4]"><span class="font-['Archivo'] [font-stretch:semi-expanded] text-base leading-[130%] text-[#6B7066]">$30/mo subscription</span></div>
-          <div class="p-6 border-b border-[#CCCDC4]"><span class="font-['Archivo'] [font-stretch:semi-expanded] text-base leading-[130%] text-[#6B7066]">$8,000&ndash;18,000</span></div>
+          <div class="p-4 sm:p-6 border-b border-[#CCCDC4]"><span class=" text-base leading-[130%] text-[#6B7066]">Total first-year cost</span></div>
+          <div class="p-4 sm:p-6 border-b border-[#CCCDC4]"><span class=" text-base leading-[130%] text-[#6B7066]">$999 one-time</span></div>
+          <div class="p-4 sm:p-6 border-b border-[#CCCDC4]"><span class=" text-base leading-[130%] text-[#6B7066]">$30/mo subscription</span></div>
+          <div class="p-4 sm:p-6 border-b border-[#CCCDC4]"><span class=" text-base leading-[130%] text-[#6B7066]">$8,000&ndash;18,000</span></div>
         </div>
 
         <!-- Row 2 -->
         <div class="grid grid-cols-4">
-          <div class="p-6 border-b border-[#CCCDC4]"><span class="font-['Archivo'] [font-stretch:semi-expanded] text-base leading-[130%] text-[#6B7066]">Time to launch</span></div>
-          <div class="p-6 border-b border-[#CCCDC4]"><span class="font-['Archivo'] [font-stretch:semi-expanded] text-base leading-[130%] text-[#6B7066]">14 days</span></div>
-          <div class="p-6 border-b border-[#CCCDC4]"><span class="font-['Archivo'] [font-stretch:semi-expanded] text-base leading-[130%] text-[#6B7066]">2 hours</span></div>
-          <div class="p-6 border-b border-[#CCCDC4]"><span class="font-['Archivo'] [font-stretch:semi-expanded] text-base leading-[130%] text-[#6B7066]">60&ndash;90 days</span></div>
+          <div class="p-4 sm:p-6 border-b border-[#CCCDC4]"><span class=" text-base leading-[130%] text-[#6B7066]">Time to launch</span></div>
+          <div class="p-4 sm:p-6 border-b border-[#CCCDC4]"><span class=" text-base leading-[130%] text-[#6B7066]">14 days</span></div>
+          <div class="p-4 sm:p-6 border-b border-[#CCCDC4]"><span class=" text-base leading-[130%] text-[#6B7066]">2 hours</span></div>
+          <div class="p-4 sm:p-6 border-b border-[#CCCDC4]"><span class=" text-base leading-[130%] text-[#6B7066]">60&ndash;90 days</span></div>
         </div>
 
         <!-- Row 3 -->
         <div class="grid grid-cols-4">
-          <div class="p-6 border-b border-[#CCCDC4]"><span class="font-['Archivo'] [font-stretch:semi-expanded] text-base leading-[130%] text-[#6B7066]">Custom branding</span></div>
-          <div class="p-6 border-b border-[#CCCDC4]"><span class="font-['Archivo'] [font-stretch:semi-expanded] text-base leading-[130%] text-[#6B7066]">Yes, full kit</span></div>
-          <div class="p-6 border-b border-[#CCCDC4]"><span class="font-['Archivo'] [font-stretch:semi-expanded] text-base leading-[130%] text-[#6B7066]">Template only</span></div>
-          <div class="p-6 border-b border-[#CCCDC4]"><span class="font-['Archivo'] [font-stretch:semi-expanded] text-base leading-[130%] text-[#6B7066]">Yes</span></div>
+          <div class="p-4 sm:p-6 border-b border-[#CCCDC4]"><span class=" text-base leading-[130%] text-[#6B7066]">Custom branding</span></div>
+          <div class="p-4 sm:p-6 border-b border-[#CCCDC4]"><span class=" text-base leading-[130%] text-[#6B7066]">Yes, full kit</span></div>
+          <div class="p-4 sm:p-6 border-b border-[#CCCDC4]"><span class=" text-base leading-[130%] text-[#6B7066]">Template only</span></div>
+          <div class="p-4 sm:p-6 border-b border-[#CCCDC4]"><span class=" text-base leading-[130%] text-[#6B7066]">Yes</span></div>
         </div>
 
         <!-- Row 4 -->
         <div class="grid grid-cols-4">
-          <div class="p-6 border-b border-[#CCCDC4]"><span class="font-['Archivo'] [font-stretch:semi-expanded] text-base leading-[130%] text-[#6B7066]">SEO content</span></div>
-          <div class="p-6 border-b border-[#CCCDC4]"><span class="font-['Archivo'] [font-stretch:semi-expanded] text-base leading-[130%] text-[#6B7066]">Real keyword research</span></div>
-          <div class="p-6 border-b border-[#CCCDC4]"><span class="font-['Archivo'] [font-stretch:semi-expanded] text-base leading-[130%] text-[#6B7066]">Generic boilerplate</span></div>
-          <div class="p-6 border-b border-[#CCCDC4]"><span class="font-['Archivo'] [font-stretch:semi-expanded] text-base leading-[130%] text-[#6B7066]">Yes</span></div>
+          <div class="p-4 sm:p-6 border-b border-[#CCCDC4]"><span class=" text-base leading-[130%] text-[#6B7066]">SEO content</span></div>
+          <div class="p-4 sm:p-6 border-b border-[#CCCDC4]"><span class=" text-base leading-[130%] text-[#6B7066]">Real keyword research</span></div>
+          <div class="p-4 sm:p-6 border-b border-[#CCCDC4]"><span class=" text-base leading-[130%] text-[#6B7066]">Generic boilerplate</span></div>
+          <div class="p-4 sm:p-6 border-b border-[#CCCDC4]"><span class=" text-base leading-[130%] text-[#6B7066]">Yes</span></div>
         </div>
 
         <!-- Row 5 -->
         <div class="grid grid-cols-4">
-          <div class="p-6 border-b border-[#CCCDC4]"><span class="font-['Archivo'] [font-stretch:semi-expanded] text-base leading-[130%] text-[#6B7066]">Stylist profile pages</span></div>
-          <div class="p-6 border-b border-[#CCCDC4]"><span class="font-['Archivo'] [font-stretch:semi-expanded] text-base leading-[130%] text-[#6B7066]">Built-in</span></div>
-          <div class="p-6 border-b border-[#CCCDC4]"><span class="font-['Archivo'] [font-stretch:semi-expanded] text-base leading-[130%] text-[#6B7066]">Single team page</span></div>
-          <div class="p-6 border-b border-[#CCCDC4]"><span class="font-['Archivo'] [font-stretch:semi-expanded] text-base leading-[130%] text-[#6B7066]">Yes</span></div>
+          <div class="p-4 sm:p-6 border-b border-[#CCCDC4]"><span class=" text-base leading-[130%] text-[#6B7066]">Stylist profile pages</span></div>
+          <div class="p-4 sm:p-6 border-b border-[#CCCDC4]"><span class=" text-base leading-[130%] text-[#6B7066]">Built-in</span></div>
+          <div class="p-4 sm:p-6 border-b border-[#CCCDC4]"><span class=" text-base leading-[130%] text-[#6B7066]">Single team page</span></div>
+          <div class="p-4 sm:p-6 border-b border-[#CCCDC4]"><span class=" text-base leading-[130%] text-[#6B7066]">Yes</span></div>
         </div>
 
         <!-- Row 6 -->
         <div class="grid grid-cols-4">
-          <div class="p-6 border-b border-[#CCCDC4]"><span class="font-['Archivo'] [font-stretch:semi-expanded] text-base leading-[130%] text-[#6B7066]">Booking integration</span></div>
-          <div class="p-6 border-b border-[#CCCDC4]"><span class="font-['Archivo'] [font-stretch:semi-expanded] text-base leading-[130%] text-[#6B7066]">Any platform</span></div>
-          <div class="p-6 border-b border-[#CCCDC4]"><span class="font-['Archivo'] [font-stretch:semi-expanded] text-base leading-[130%] text-[#6B7066]">Vagaro only</span></div>
-          <div class="p-6 border-b border-[#CCCDC4]"><span class="font-['Archivo'] [font-stretch:semi-expanded] text-base leading-[130%] text-[#6B7066]">Any platform</span></div>
+          <div class="p-4 sm:p-6 border-b border-[#CCCDC4]"><span class=" text-base leading-[130%] text-[#6B7066]">Booking integration</span></div>
+          <div class="p-4 sm:p-6 border-b border-[#CCCDC4]"><span class=" text-base leading-[130%] text-[#6B7066]">Any platform</span></div>
+          <div class="p-4 sm:p-6 border-b border-[#CCCDC4]"><span class=" text-base leading-[130%] text-[#6B7066]">Vagaro only</span></div>
+          <div class="p-4 sm:p-6 border-b border-[#CCCDC4]"><span class=" text-base leading-[130%] text-[#6B7066]">Any platform</span></div>
         </div>
 
         <!-- Row 7 -->
         <div class="grid grid-cols-4">
-          <div class="p-6 border-b border-[#CCCDC4]"><span class="font-['Archivo'] [font-stretch:semi-expanded] text-base leading-[130%] text-[#6B7066]">Ownership</span></div>
-          <div class="p-6 border-b border-[#CCCDC4]"><span class="font-['Archivo'] [font-stretch:semi-expanded] text-base leading-[130%] text-[#6B7066]">You own everything</span></div>
-          <div class="p-6 border-b border-[#CCCDC4]"><span class="font-['Archivo'] [font-stretch:semi-expanded] text-base leading-[130%] text-[#6B7066]">Locked to Vagaro</span></div>
-          <div class="p-6 border-b border-[#CCCDC4]"><span class="font-['Archivo'] [font-stretch:semi-expanded] text-base leading-[130%] text-[#6B7066]">Often agency-locked</span></div>
+          <div class="p-4 sm:p-6 border-b border-[#CCCDC4]"><span class=" text-base leading-[130%] text-[#6B7066]">Ownership</span></div>
+          <div class="p-4 sm:p-6 border-b border-[#CCCDC4]"><span class=" text-base leading-[130%] text-[#6B7066]">You own everything</span></div>
+          <div class="p-4 sm:p-6 border-b border-[#CCCDC4]"><span class=" text-base leading-[130%] text-[#6B7066]">Locked to Vagaro</span></div>
+          <div class="p-4 sm:p-6 border-b border-[#CCCDC4]"><span class=" text-base leading-[130%] text-[#6B7066]">Often agency-locked</span></div>
         </div>
 
       </div>
@@ -1430,7 +1431,7 @@
 
     <!-- Bottom note -->
     <div class="max-w-[860px] mx-auto mt-8 md:mt-10">
-      <p class="font-['Archivo'] [font-stretch:semi-expanded] text-base leading-[130%] text-[#6B7066] text-center">
+      <p class=" text-base leading-[130%] text-[#6B7066] text-center">
         Solo or small salon doing $200K&ndash;$800K annual revenue, wanting a real branded site without a retainer? Pixxen. Brand-new salon with no marketing budget and you'll outgrow it in 12 months? Stay on Vagaro free until you're ready. Established multi-location chain spending $5K+ monthly on PPC? You need a full-service agency, not us. Some salons grow out of our package &mdash; that's a sign the business is working.
       </p>
     </div>
@@ -1450,17 +1451,17 @@
       <!-- ---------- LEFT COLUMN ---------- -->
       <div class="flex flex-col justify-center xl:pb-24 lg:pb-16 pb-8 ">
 
-        <h2 class="font-imbue text-[#36432A] font-extralight leading-none text-4xl md:text-5xl lg:text-6xl xl:text-[64px] mb-10 md:mb-14">
+        <h2 class="font-imbue text-[#36432A] font-extralight leading-none text-[32px] md:text-4xl lg:text-5xl xl:text-[56px] 2xl:text-[64px] mb-10 md:mb-14">
           What we won't promise
         </h2>
 
-        <div class="flex flex-col gap-14">
+        <div class="flex flex-col md:gap-14 gap-8">
 
           <!-- Item 1 -->
-          <div class="flex items-start gap-8">
-            <img src="assets/images/promise-salone-spas-1.svg" class="img-fluid" alt="promise icon">
+          <div class="flex items-start md:gap-8 gap-4">
+            <img src="assets/images/promise-salone-spas-1.svg" class="img-fluid md:w-auto sm:w-16 w-12" alt="promise icon">
             <div>
-              <h3 class="font-imbue font-extralight text-[#36432A] leading-none text-2xl md:text-3xl xl:text-[40px]">
+              <h3 class="font-imbue font-extralight text-[#36432A] leading-none text-2xl md:text-[28px] lg:text-3xl 2xl:text-[40px]">
                 SEO content with real keyword research
               </h3>
               <p class="mt-3 font-['Archivo'] [font-stretch:semi-expanded] text-base leading-[130%] text-[#6B7066]">
@@ -1470,10 +1471,10 @@
           </div>
 
           <!-- Item 2 -->
-          <div class="flex items-start gap-8">
-             <img src="assets/images/promise-salone-spas-2.svg" class="img-fluid" alt="promise icon">
+          <div class="flex items-start md:gap-8 gap-4">
+             <img src="assets/images/promise-salone-spas-2.svg" class="img-fluid md:w-auto sm:w-16 w-12" alt="promise icon">
             <div>
-              <h3 class="font-imbue font-extralight text-[#36432A] leading-none text-2xl md:text-3xl xl:text-[40px]">
+              <h3 class="font-imbue font-extralight text-[#36432A] leading-none text-2xl md:text-[28px] lg:text-3xl 2xl:text-[40px]">
                 Online booking platforms beat your website
               </h3>
               <p class="mt-3 font-['Archivo'] [font-stretch:semi-expanded] text-base leading-[130%] text-[#6B7066]">
@@ -1483,10 +1484,10 @@
           </div>
 
           <!-- Item 3 -->
-          <div class="flex items-start gap-8">
-             <img src="assets/images/promise-salone-spas-3.svg" class="img-fluid" alt="promise icon">
+          <div class="flex items-start md:gap-8 gap-4">
+             <img src="assets/images/promise-salone-spas-3.svg" class="img-fluid md:w-auto sm:w-16 w-12" alt="promise icon">
             <div>
-              <h3 class="font-imbue font-extralight text-[#36432A] leading-none text-2xl md:text-3xl xl:text-[40px]">
+              <h3 class="font-imbue font-extralight text-[#36432A] leading-none text-2xl md:text-[28px] lg:text-3xl 2xl:text-[40px]">
                 The site cannot book clients for you
               </h3>
               <p class="mt-3 font-['Archivo'] [font-stretch:semi-expanded] text-base leading-[130%] text-[#6B7066]">
@@ -1496,10 +1497,10 @@
           </div>
 
           <!-- Item 4 -->
-          <div class="flex items-start gap-8">
-            <img src="assets/images/promise-salone-spas-4.svg" class="img-fluid" alt="promise icon">
+          <div class="flex items-start md:gap-8 gap-4">
+            <img src="assets/images/promise-salone-spas-4.svg" class="img-fluid md:w-auto sm:w-16 w-12" alt="promise icon">
             <div>
-              <h3 class="font-imbue font-extralight text-[#36432A] leading-none text-2xl md:text-3xl xl:text-[40px]">
+              <h3 class="font-imbue font-extralight text-[#36432A] leading-none text-2xl md:text-[28px] lg:text-3xl 2xl:text-[40px]">
                 Med spa requires compliance
               </h3>
               <p class="mt-3 font-['Archivo'] [font-stretch:semi-expanded] text-base leading-[130%] text-[#6B7066]">
@@ -1531,8 +1532,8 @@
   <div class="container">
 
     <!-- Heading -->
-    <div class="text-center max-w-[736px] w-full mx-auto mb-12 md:mb-16">
-      <h2 class="font-imbue text-white font-extralight leading-none text-4xl md:text-5xl lg:text-6xl xl:text-[80px]">
+    <div class="text-center max-w-[736px] w-full mx-auto mb-8 sm:mb-12 md:mb-16">
+      <h2 class="font-imbue text-white font-extralight leading-none text-[32px] md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-[80px]">
         Reviews from salon and spa owners we've built sites for
       </h2>
     </div>
@@ -1541,82 +1542,82 @@
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
 
       <!-- Card 1 -->
-      <div class="bg-[#27351B] p-8 flex flex-col justify-between lg:min-h-120">
+      <div class="bg-[#27351B] sm:p-6 p-4 md:p-8 flex flex-col justify-between lg:min-h-120">
      <div>
            <div class="flex gap-1">
-         <img src="assets/images/salon-review-star.svg" alt="star">
-         <img src="assets/images/salon-review-star.svg" alt="star">
-         <img src="assets/images/salon-review-star.svg" alt="star">
-         <img src="assets/images/salon-review-star.svg" alt="star">
-         <img src="assets/images/salon-review-star.svg" alt="star">
+         <img src="assets/images/salon-review-star.svg" class="w-6 md:w-auto" alt="star">
+         <img src="assets/images/salon-review-star.svg" class="w-6 md:w-auto" alt="star">
+         <img src="assets/images/salon-review-star.svg" class="w-6 md:w-auto" alt="star">
+         <img src="assets/images/salon-review-star.svg" class="w-6 md:w-auto" alt="star">
+         <img src="assets/images/salon-review-star.svg" class="w-6 md:w-auto" alt="star">
           
         </div>
 
-        <h3 class="font-imbue font-extralight text-white leading-none text-3xl xl:text-[40px] md:mt-6 mt-5 lg:mt-8">
+        <h3 class="font-imbue font-extralight text-white leading-none text-3xl md:text-4xl 2xl:text-[40px] md:mt-6 mt-5 lg:mt-8">
           Awesome website design
         </h3>
 
-        <p class="mt-6 text-base leading-[130%] text-[#BEC5B7]">
+        <p class="mt-4 sm:mt-6 text-base leading-[130%] text-[#BEC5B7]">
           We were paying $400 a month for a 'salon marketing' retainer that did nothing. Pixxen built us a real site for $999, integrated our Booksy account properly, and three months in we're booked four weeks out. The new site actually ranks for 'balayage Scottsdale' which our old site never did.
         </p>
      </div>
 
         <div class="mt-auto pt-10">
-          <h4 class="font-imbue font-extralight text-white leading-none text-2xl xl:text-[32px]">Maya Tran</h4>
+          <h4 class="font-imbue font-extralight text-white leading-none text-2xl 2xl:text-[32px]">Maya Tran</h4>
           <p class="mt-1.5 text-base leading-[130%] text-[#BEC5B7]">Owner, Halo Color Studio</p>
         </div>
       </div>
 
       <!-- Card 2 -->
-      <div class="bg-[#27351B] p-8 flex flex-col justify-between lg:min-h-120">
+      <div class="bg-[#27351B] sm:p-6 p-4 md:p-8 flex flex-col justify-between lg:min-h-120">
         <div>
                     <div class="flex gap-1">
-         <img src="assets/images/salon-review-star.svg" alt="star">
-         <img src="assets/images/salon-review-star.svg" alt="star">
-         <img src="assets/images/salon-review-star.svg" alt="star">
-         <img src="assets/images/salon-review-star.svg" alt="star">
-         <img src="assets/images/salon-review-star.svg" alt="star">
+         <img src="assets/images/salon-review-star.svg" class="w-6 md:w-auto" alt="star">
+         <img src="assets/images/salon-review-star.svg" class="w-6 md:w-auto" alt="star">
+         <img src="assets/images/salon-review-star.svg" class="w-6 md:w-auto" alt="star">
+         <img src="assets/images/salon-review-star.svg" class="w-6 md:w-auto" alt="star">
+         <img src="assets/images/salon-review-star.svg" class="w-6 md:w-auto" alt="star">
           
         </div>
 
-        <h3 class="font-imbue font-extralight text-white leading-none text-3xl xl:text-[40px] md:mt-6 mt-5 lg:mt-8">
+        <h3 class="font-imbue font-extralight text-white leading-none text-3xl md:text-4xl 2xl:text-[40px] md:mt-6 mt-5 lg:mt-8">
           Awesome website design
         </h3>
 
-        <p class="mt-6 text-base leading-[130%] text-[#BEC5B7]">
+        <p class="mt-4 sm:mt-6 text-base leading-[130%] text-[#BEC5B7]">
           We were paying $400 a month for a 'salon marketing' retainer that did nothing. Pixxen built us a real site for $999, integrated our Booksy account properly, and three months in we're booked four weeks out. The new site actually ranks for 'balayage Scottsdale' which our old site never did.
         </p>
 
         </div>
         <div class="mt-auto pt-10">
-          <h4 class="font-imbue font-extralight text-white leading-none text-2xl xl:text-[32px]">Maya Tran</h4>
+          <h4 class="font-imbue font-extralight text-white leading-none text-2xl 2xl:text-[32px]">Maya Tran</h4>
           <p class="mt-1.5 text-base leading-[130%] text-[#BEC5B7]">Owner, Halo Color Studio</p>
         </div>
       </div>
 
       <!-- Card 3 -->
-      <div class="bg-[#27351B] p-8 flex flex-col justify-between lg:min-h-120">
+      <div class="bg-[#27351B] sm:p-6 p-4 md:p-8 flex flex-col justify-between lg:min-h-120">
    <div>
                <div class="flex gap-1">
-         <img src="assets/images/salon-review-star.svg" alt="star">
-         <img src="assets/images/salon-review-star.svg" alt="star">
-         <img src="assets/images/salon-review-star.svg" alt="star">
-         <img src="assets/images/salon-review-star.svg" alt="star">
-         <img src="assets/images/salon-review-star.svg" alt="star">
+         <img src="assets/images/salon-review-star.svg" class="w-6 md:w-auto" alt="star">
+         <img src="assets/images/salon-review-star.svg" class="w-6 md:w-auto" alt="star">
+         <img src="assets/images/salon-review-star.svg" class="w-6 md:w-auto" alt="star">
+         <img src="assets/images/salon-review-star.svg" class="w-6 md:w-auto" alt="star">
+         <img src="assets/images/salon-review-star.svg" class="w-6 md:w-auto" alt="star">
           
         </div>
 
-        <h3 class="font-imbue font-extralight text-white leading-none text-3xl xl:text-[40px] md:mt-6 mt-5 lg:mt-8">
+        <h3 class="font-imbue font-extralight text-white leading-none text-3xl md:text-4xl 2xl:text-[40px] md:mt-6 mt-5 lg:mt-8">
           Awesome website design
         </h3>
 
-        <p class="mt-6 text-base leading-[130%] text-[#BEC5B7]">
+        <p class="mt-4 sm:mt-6 text-base leading-[130%] text-[#BEC5B7]">
           We were paying $400 a month for a 'salon marketing' retainer that did nothing. Pixxen built us a real site for $999, integrated our Booksy account properly, and three months in we're booked four weeks out. The new site actually ranks for 'balayage Scottsdale' which our old site never did.
         </p>
    </div>
 
         <div class="mt-auto pt-10">
-          <h4 class="font-imbue font-extralight text-white leading-none text-2xl xl:text-[32px]">Maya Tran</h4>
+          <h4 class="font-imbue font-extralight text-white leading-none text-2xl 2xl:text-[32px]">Maya Tran</h4>
           <p class="mt-1.5 text-base leading-[130%] text-[#BEC5B7]">Owner, Halo Color Studio</p>
         </div>
       </div>
@@ -1634,7 +1635,7 @@
 
       <!-- ---------- LEFT COLUMN ---------- -->
       <div>
-        <h2 class="font-imbue text-[#36432A] font-extralight leading-none text-4xl md:text-5xl lg:text-6xl xl:text-[64px]">
+        <h2 class="font-imbue text-[#36432A] font-extralight leading-none text-[32px] md:text-4xl lg:text-5xl xl:text-[56px] 2xl:text-[64px]">
           Frequently asked questions
         </h2>
       </div>
@@ -1644,8 +1645,8 @@
 
         <!-- FAQ Item 1 -->
         <div class="faq-item border-b border-[#CCCDC4]">
-          <button type="button" class="faq-trigger w-full flex items-center justify-between gap-4 p-6 text-left transition-colors">
-            <span class="faq-question font-imbue font-extralight text-[#36432A] leading-none text-2xl md:text-3xl xl:text-[40px]">
+          <button type="button" class="faq-trigger w-full flex items-center justify-between gap-2 sm:gap-4 sm:p-6 p-4 text-left transition-colors">
+            <span class="faq-question font-imbue font-extralight text-[#36432A] leading-none text-2xl md:text-[28px] lg:text-3xl 2xl:text-[40px]">
               Is the $999 price really all-in?
             </span>
             <span class="faq-icon shrink-0 relative w-6 h-6">
@@ -1663,7 +1664,7 @@
           </button>
           <div class="faq-panel overflow-hidden max-h-0 transition-[max-height] duration-300 ease-in-out">
             <div class="px-6 pb-6">
-              <p class="font-['Archivo'] [font-stretch:semi-expanded] text-base leading-[130%] text-[#6B7066]">
+              <p class=" text-base leading-[130%] text-[#6B7066]">
                 Yes. Logo, branding, salon or spa website, SEO content, on-page SEO setup, Google Business Profile optimization, and 30 days of post-launch support. No hidden fees. Booking platform subscription (Vagaro, Booksy, Square) is separate &mdash; that's your existing tool, not something we sell.
               </p>
             </div>
@@ -1672,8 +1673,8 @@
 
         <!-- FAQ Item 2 -->
         <div class="faq-item border-b border-[#CCCDC4]">
-          <button type="button" class="faq-trigger w-full flex items-center justify-between gap-4 p-6 text-left transition-colors">
-            <span class="faq-question font-imbue font-extralight text-[#36432A] leading-none text-2xl md:text-3xl xl:text-[40px]">
+          <button type="button" class="faq-trigger w-full flex items-center justify-between gap-2 sm:gap-4 sm:p-6 p-4 text-left transition-colors">
+            <span class="faq-question font-imbue font-extralight text-[#36432A] leading-none text-2xl md:text-[28px] lg:text-3xl 2xl:text-[40px]">
               Will my salon rank #1 for 'hair salon [my city]'?
             </span>
             <span class="faq-icon shrink-0 relative w-6 h-6">
@@ -1691,7 +1692,7 @@
           </button>
           <div class="faq-panel overflow-hidden max-h-0 transition-[max-height] duration-300 ease-in-out">
             <div class="px-6 pb-6">
-              <p class="font-['Archivo'] [font-stretch:semi-expanded] text-base leading-[130%] text-[#6B7066]">
+              <p class=" text-base leading-[130%] text-[#6B7066]">
                 No one can honestly promise a #1 ranking on a broad city-wide term &mdash; that's shared with every salon in town and takes years of authority to earn. We focus on specific service + neighborhood keywords where you can realistically compete and win, faster.
               </p>
             </div>
@@ -1700,8 +1701,8 @@
 
         <!-- FAQ Item 3 -->
         <div class="faq-item border-b border-[#CCCDC4]">
-          <button type="button" class="faq-trigger w-full flex items-center justify-between gap-4 p-6 text-left transition-colors">
-            <span class="faq-question font-imbue font-extralight text-[#36432A] leading-none text-2xl md:text-3xl xl:text-[40px]">
+          <button type="button" class="faq-trigger w-full flex items-center justify-between gap-2 sm:gap-4 sm:p-6 p-4 text-left transition-colors">
+            <span class="faq-question font-imbue font-extralight text-[#36432A] leading-none text-2xl md:text-[28px] lg:text-3xl 2xl:text-[40px]">
               Do you integrate with Vagaro / Booksy / Square / GlossGenius?
             </span>
             <span class="faq-icon shrink-0 relative w-6 h-6">
@@ -1719,7 +1720,7 @@
           </button>
           <div class="faq-panel overflow-hidden max-h-0 transition-[max-height] duration-300 ease-in-out">
             <div class="px-6 pb-6">
-              <p class="font-['Archivo'] [font-stretch:semi-expanded] text-base leading-[130%] text-[#6B7066]">
+              <p class=" text-base leading-[130%] text-[#6B7066]">
                 Yes, we integrate directly with all major booking platforms so the flow feels native to your site rather than a tacked-on widget.
               </p>
             </div>
@@ -1728,8 +1729,8 @@
 
         <!-- FAQ Item 4 -->
         <div class="faq-item border-b border-[#CCCDC4]">
-          <button type="button" class="faq-trigger w-full flex items-center justify-between gap-4 p-6 text-left transition-colors">
-            <span class="faq-question font-imbue font-extralight text-[#36432A] leading-none text-2xl md:text-3xl xl:text-[40px]">
+          <button type="button" class="faq-trigger w-full flex items-center justify-between gap-2 sm:gap-4 sm:p-6 p-4 text-left transition-colors">
+            <span class="faq-question font-imbue font-extralight text-[#36432A] leading-none text-2xl md:text-[28px] lg:text-3xl 2xl:text-[40px]">
               What if I already have a Vagaro or Booksy free website?
             </span>
             <span class="faq-icon shrink-0 relative w-6 h-6">
@@ -1747,7 +1748,7 @@
           </button>
           <div class="faq-panel overflow-hidden max-h-0 transition-[max-height] duration-300 ease-in-out">
             <div class="px-6 pb-6">
-              <p class="font-['Archivo'] [font-stretch:semi-expanded] text-base leading-[130%] text-[#6B7066]">
+              <p class=" text-base leading-[130%] text-[#6B7066]">
                 That's a great starting point and often fine for brand-new salons with no marketing budget yet. When you're ready for custom branding, real SEO, and full ownership, we build a proper site around your existing booking account.
               </p>
             </div>
@@ -1756,8 +1757,8 @@
 
         <!-- FAQ Item 5 -->
         <div class="faq-item border-b border-[#CCCDC4]">
-          <button type="button" class="faq-trigger w-full flex items-center justify-between gap-4 p-6 text-left transition-colors">
-            <span class="faq-question font-imbue font-extralight text-[#36432A] leading-none text-2xl md:text-3xl xl:text-[40px]">
+          <button type="button" class="faq-trigger w-full flex items-center justify-between gap-2 sm:gap-4 sm:p-6 p-4 text-left transition-colors">
+            <span class="faq-question font-imbue font-extralight text-[#36432A] leading-none text-2xl md:text-[28px] lg:text-3xl 2xl:text-[40px]">
               Do you do ongoing SEO or content writing after launch?
             </span>
             <span class="faq-icon shrink-0 relative w-6 h-6">
@@ -1775,7 +1776,7 @@
           </button>
           <div class="faq-panel overflow-hidden max-h-0 transition-[max-height] duration-300 ease-in-out">
             <div class="px-6 pb-6">
-              <p class="font-['Archivo'] [font-stretch:semi-expanded] text-base leading-[130%] text-[#6B7066]">
+              <p class=" text-base leading-[130%] text-[#6B7066]">
                 The $999 package covers launch content. Ongoing content and SEO retainers are available separately for salons that want continuous ranking growth after the initial 30-day support window.
               </p>
             </div>
@@ -1784,8 +1785,8 @@
 
         <!-- FAQ Item 6 -->
         <div class="faq-item border-b border-[#CCCDC4]">
-          <button type="button" class="faq-trigger w-full flex items-center justify-between gap-4 p-6 text-left transition-colors">
-            <span class="faq-question font-imbue font-extralight text-[#36432A] leading-none text-2xl md:text-3xl xl:text-[40px]">
+          <button type="button" class="faq-trigger w-full flex items-center justify-between gap-2 sm:gap-4 sm:p-6 p-4 text-left transition-colors">
+            <span class="faq-question font-imbue font-extralight text-[#36432A] leading-none text-2xl md:text-[28px] lg:text-3xl 2xl:text-[40px]">
               How do you handle med spa compliance?
             </span>
             <span class="faq-icon shrink-0 relative w-6 h-6">
@@ -1803,7 +1804,7 @@
           </button>
           <div class="faq-panel overflow-hidden max-h-0 transition-[max-height] duration-300 ease-in-out">
             <div class="px-6 pb-6">
-              <p class="font-['Archivo'] [font-stretch:semi-expanded] text-base leading-[130%] text-[#6B7066]">
+              <p class=" text-base leading-[130%] text-[#6B7066]">
                 We follow FTC advertising rules and relevant state cosmetic procedure regulations. That means no 'guaranteed results' language and proper medical disclaimers built into every treatment page.
               </p>
             </div>
@@ -1812,8 +1813,8 @@
 
         <!-- FAQ Item 7 -->
         <div class="faq-item border-b border-[#CCCDC4]">
-          <button type="button" class="faq-trigger w-full flex items-center justify-between gap-4 p-6 text-left transition-colors">
-            <span class="faq-question font-imbue font-extralight text-[#36432A] leading-none text-2xl md:text-3xl xl:text-[40px]">
+          <button type="button" class="faq-trigger w-full flex items-center justify-between gap-2 sm:gap-4 sm:p-6 p-4 text-left transition-colors">
+            <span class="faq-question font-imbue font-extralight text-[#36432A] leading-none text-2xl md:text-[28px] lg:text-3xl 2xl:text-[40px]">
               Can you build a multi-location salon site?
             </span>
             <span class="faq-icon shrink-0 relative w-6 h-6">
@@ -1831,7 +1832,7 @@
           </button>
           <div class="faq-panel overflow-hidden max-h-0 transition-[max-height] duration-300 ease-in-out">
             <div class="px-6 pb-6">
-              <p class="font-['Archivo'] [font-stretch:semi-expanded] text-base leading-[130%] text-[#6B7066]">
+              <p class=" text-base leading-[130%] text-[#6B7066]">
                 Yes, though multi-location sites fall outside the standard $999 package since each location typically needs its own landing page, local SEO setup, and Google Business Profile. We'll quote based on the number of locations.
               </p>
             </div>
@@ -1840,8 +1841,8 @@
 
         <!-- FAQ Item 8 -->
         <div class="faq-item border-b border-[#CCCDC4]">
-          <button type="button" class="faq-trigger w-full flex items-center justify-between gap-4 p-6 text-left transition-colors">
-            <span class="faq-question font-imbue font-extralight text-[#36432A] leading-none text-2xl md:text-3xl xl:text-[40px]">
+          <button type="button" class="faq-trigger w-full flex items-center justify-between gap-2 sm:gap-4 sm:p-6 p-4 text-left transition-colors">
+            <span class="faq-question font-imbue font-extralight text-[#36432A] leading-none text-2xl md:text-[28px] lg:text-3xl 2xl:text-[40px]">
               What happens after the 30-day support window ends?
             </span>
             <span class="faq-icon shrink-0 relative w-6 h-6">
@@ -1859,7 +1860,7 @@
           </button>
           <div class="faq-panel overflow-hidden max-h-0 transition-[max-height] duration-300 ease-in-out">
             <div class="px-6 pb-6">
-              <p class="font-['Archivo'] [font-stretch:semi-expanded] text-base leading-[130%] text-[#6B7066]">
+              <p class=" text-base leading-[130%] text-[#6B7066]">
                 The site is yours &mdash; content, code, and domain. You can maintain it yourself, hire anyone else, or come back to us for ongoing support and updates on a pay-as-you-go basis.
               </p>
             </div>
@@ -1868,8 +1869,8 @@
 
         <!-- FAQ Item 9 -->
         <div class="faq-item border-b border-[#CCCDC4]">
-          <button type="button" class="faq-trigger w-full flex items-center justify-between gap-4 p-6 text-left transition-colors">
-            <span class="faq-question font-imbue font-extralight text-[#36432A] leading-none text-2xl md:text-3xl xl:text-[40px]">
+          <button type="button" class="faq-trigger w-full flex items-center justify-between gap-2 sm:gap-4 sm:p-6 p-4 text-left transition-colors">
+            <span class="faq-question font-imbue font-extralight text-[#36432A] leading-none text-2xl md:text-[28px] lg:text-3xl 2xl:text-[40px]">
               Can the site handle gift card sales?
             </span>
             <span class="faq-icon shrink-0 relative w-6 h-6">
@@ -1887,7 +1888,7 @@
           </button>
           <div class="faq-panel overflow-hidden max-h-0 transition-[max-height] duration-300 ease-in-out">
             <div class="px-6 pb-6">
-              <p class="font-['Archivo'] [font-stretch:semi-expanded] text-base leading-[130%] text-[#6B7066]">
+              <p class=" text-base leading-[130%] text-[#6B7066]">
                 Yes, through your Square or Vagaro gift card integration, with a one-tap purchase path placed in the header year-round.
               </p>
             </div>
@@ -1896,8 +1897,8 @@
 
         <!-- FAQ Item 10 -->
         <div class="faq-item border-b border-[#CCCDC4]">
-          <button type="button" class="faq-trigger w-full flex items-center justify-between gap-4 p-6 text-left transition-colors">
-            <span class="faq-question font-imbue font-extralight text-[#36432A] leading-none text-2xl md:text-3xl xl:text-[40px]">
+          <button type="button" class="faq-trigger w-full flex items-center justify-between gap-2 sm:gap-4 sm:p-6 p-4 text-left transition-colors">
+            <span class="faq-question font-imbue font-extralight text-[#36432A] leading-none text-2xl md:text-[28px] lg:text-3xl 2xl:text-[40px]">
               Do you write stylist bios or do I provide them?
             </span>
             <span class="faq-icon shrink-0 relative w-6 h-6">
@@ -1915,7 +1916,7 @@
           </button>
           <div class="faq-panel overflow-hidden max-h-0 transition-[max-height] duration-300 ease-in-out">
             <div class="px-6 pb-6">
-              <p class="font-['Archivo'] [font-stretch:semi-expanded] text-base leading-[130%] text-[#6B7066]">
+              <p class=" text-base leading-[130%] text-[#6B7066]">
                 Either works. Send us raw notes about each stylist's specialties and experience and we'll write polished bios, or provide your own copy and we'll format it into the profile pages.
               </p>
             </div>
@@ -1945,8 +1946,8 @@
                 <div class="max-w-[914px] mx-auto">
 
                   <div class="text-center max-w-3xl mx-auto sm:mb-12 mb-6">
-                     <span class="font-imperial-script text-[#BD8600] text-4xl md:text-6xl lg:text-[80px] font-normal leading-none ">Ready when you are</span>
-                    <h2 class="font-imbue text-white lg:my-6 my-4 font-extralight leading-none text-4xl md:text-5xl lg:text-6xl xl:text-[64px]">
+                     <span class="font-imperial-script text-[#BD8600] text-4xl md:text-5xl lg:text-6xl 2xl:text-[80px] font-normal leading-none ">Ready when you are</span>
+                    <h2 class="font-imbue text-white lg:my-6 my-4 font-extralight leading-none text-[32px] md:text-4xl lg:text-5xl xl:text-[56px] 2xl:text-[64px]">
        Ready for a website that turns 'salon near me' searches into booked appointments?
       </h2>
       <p class="sm:text-base text-sm text-[#BEC5B7]  leading-[150%]">
@@ -1954,7 +1955,7 @@
       </p>
 
 <div class="flex items-stretch justify-center w-full">
-          <a href="contact.html" class="mt-8 inline-flex items-center justify-center gap-[10px] bg-[#BD8600] px-8 py-5  text-[16px] font-[700] uppercase tracking-wide text-white transition-colors hover:bg-[#a87700]">
+          <a href="contact.html" class="mt-8 inline-flex items-center justify-center gap-[10px] bg-[#BD8600] px-5 md:px-8 md:py-5 py-3  text-[16px] font-[700] uppercase tracking-wide text-white transition-colors hover:bg-[#a87700]">
           Book a free 15-min call
         </a>
         </div>
@@ -1982,7 +1983,7 @@
                 <div class="grid md:grid-cols-12 md:gap-8 lg:gap-12">
 
                     <div
-                        class="lg:col-span-8 md:col-span-7 md:py-12 py-6 flex flex-col gap-25 justify-between md:border-b-0 border-b border-[#2E6E69]">
+                        class="lg:col-span-8 md:col-span-7 md:py-12 py-6 flex flex-col gap-25 justify-between md:border-b-0 border-b border-[#56614C]">
                         <div class="grid md:grid-cols-4 grid-cols-2 xl:gap-8 gap-4">
                             <!-- Services Column -->
                             <div class="">
